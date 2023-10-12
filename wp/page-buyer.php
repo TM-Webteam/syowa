@@ -169,21 +169,34 @@
       <div class="flex jcC gap30 card">
 
         <?php
+          $queried_object = get_queried_object();
+          $term_id = esc_html($queried_object->term_id);
           $paged = get_query_var('paged') ? get_query_var('paged') : 1;
           $args = array(
             'posts_per_page' => 3,
             'post_type' => 'column',
             'paged' => $paged,
             'order' => 'DESC',
+            'orderby' => 'post_date',
             'post_status' => 'publish',
+            'tax_query'  => array(
+              'relation'  => 'AND',
+              array(
+                'taxonomy' => 'column_category',
+                'field' => 'term_id',
+                'terms' => array($term_id),
+                'operator' => 'IN',
+              ),
+            ),
           );
           $the_query = new WP_Query($args);
           if ($the_query->have_posts()) :
           ?>
-            <?php while ($the_query->have_posts()) : $the_query->the_post();
-              $post_id = get_the_ID();
-              $post_terms = get_the_terms($post_id, 'column_category');
-            ?>
+
+          <?php while ($the_query->have_posts()) : $the_query->the_post();
+            $post_id = get_the_ID(5);
+            $post_terms = get_the_terms($post_id, 'column_category');
+          ?>
 
             <a href="<?php the_permalink(); ?>" class="card__wrap">
               <figure class="card__wrap--img"><?php the_post_thumbnail(); ?></figure>
@@ -214,12 +227,11 @@
       <div class="flex jcC aiC gap50 desc">
         <figure class="desc__img"><img src="<?php echo assets_path() ?>img/common/img-wp.png" alt=""></figure>
         <summary class="desc__box">
-          <h3 class="desc__box--ttl">資料タイトルが入ります。資料タイトルが入ります。<br>資料タイトルが入ります。資料タイトルが入ります。</h3>
-          <div class="desc__box--txt">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。</div>
-          <a href="<?php echo esc_url(home_url('/')); ?>catalog/" class="more bgP">お役立ち資料をダウンロード</a>
+          <h3 class="desc__box--ttl">倉庫・工場はどんな基準で購入すべき？倉庫・工場の購入前に読むべきガイドブック</h3>
+          <div class="desc__box--txt">倉庫・工場を購入したい方必見！倉庫・工場をどのような基準で購入すると良いか、基礎知識から押さえるべきポイントまでこの資料1つでまるっと解説しています。ぜひお手に取ってご参考ください。</div>
+          <a href="<?php echo esc_url(home_url('/')); ?>whitepaper/test/" class="more bgP">お役立ち資料をダウンロード</a>
         </summary>
       </div>
-      <a href="<?php echo esc_url(home_url('/')); ?>catalog/" class="more cW">お役立ち資料一覧を見る</a>
     </div>
   </section>
 

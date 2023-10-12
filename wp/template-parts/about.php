@@ -7,6 +7,6 @@
       <li><img src="<?php echo assets_path() ?>img/common/img-about02.png" alt="施工実績 20,000件以上" loading="lazy" decoding="async" width="355" height="210"></li>
       <li><img src="<?php echo assets_path() ?>img/common/img-about03.png" alt="取得認証 20種以上" loading="lazy" decoding="async" width="355" height="210"></li>
     </ul>
-    <a href="<?php echo esc_url(home_url('/')); ?>strength/" class="more">詳しくはこちら</a>
+    <a href="<?php echo esc_url(home_url('/')); ?>company/" class="more">詳しくはこちら</a>
   </div>
 </section>

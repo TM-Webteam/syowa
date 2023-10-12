@@ -5,7 +5,7 @@
 
     <div class="casewrap">
       <h3 class="casewrap__had"><span>CASE 01</span></h3>
-      <div class="flex casewrap__box">
+      <div class="flex aiC casewrap__box">
         <div class="casewrap__be">
           <div class="flex inherit casewrap__be--box">
             <figure class="casewrap__be--img">
@@ -31,7 +31,7 @@
 
     <div class="casewrap">
       <h3 class="casewrap__had"><span>CASE 02</span></h3>
-      <div class="flex casewrap__box">
+      <div class="flex aiC casewrap__box">
         <div class="casewrap__be">
           <div class="flex inherit casewrap__be--box">
             <figure class="casewrap__be--img">

@@ -98,10 +98,6 @@
   background: linear-gradient(to top left, #002A54 0%, #003D7E 50%, #003D7E 50%);
   color: #fff;
   .desc {
-    margin-bottom: 70px;
-    @media #{$sp} {
-      margin-bottom: 30px;
-    }
     &.mb0 {
       margin-bottom: 0;
     }
@@ -158,6 +154,12 @@
           margin: 0 auto;
         }
       }
+    }
+  }
+  .more.mt70 {
+    margin-top: 70px;
+    @media #{$sp} {
+      margin-top: 30px;
     }
   }
 }

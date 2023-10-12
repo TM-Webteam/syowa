@@ -45,12 +45,12 @@
       <div class="flex jcC aiC gap50 desc">
         <figure class="desc__img"><img src="<?php echo assets_path() ?>img/common/img-wp.png" alt=""></figure>
         <summary class="desc__box">
-          <h3 class="desc__box--ttl">資料タイトルが入ります。資料タイトルが入ります。<br>資料タイトルが入ります。資料タイトルが入ります。</h3>
-          <div class="desc__box--txt">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。</div>
-          <a href="<?php echo esc_url(home_url('/')); ?>catalog/" class="more bgP">サービス資料をダウンロード</a>
+          <h3 class="desc__box--ttl">倉庫・工場はどんな基準で購入すべき？倉庫・工場の購入前に読むべきガイドブック</h3>
+          <div class="desc__box--txt">倉庫・工場を購入したい方必見！倉庫・工場をどのような基準で購入すると良いか、基礎知識から押さえるべきポイントまでこの資料1つでまるっと解説しています。ぜひお手に取ってご参考ください。</div>
+          <a href="<?php echo esc_url(home_url('/')); ?>whitepaper/test/" class="more bgP">お役立ち資料をダウンロード</a>
         </summary>
       </div>
-      <a href="<?php echo esc_url(home_url('/')); ?>catalog/" class="more cW">サービス資料一覧を見る</a>
+      <a href="<?php echo esc_url(home_url('/')); ?>whitepaper/" class="more mt70 cW">お役立ち資料一覧を見る</a>
     </div>
   </section>
 

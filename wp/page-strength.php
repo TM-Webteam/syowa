@@ -53,7 +53,7 @@
           <div class="item__box--num">03</div>
           <h2 class="item__box--ttl">総合建設業で積み重ねた豊富な実績</h2>
           <div class="item__box--txt">確かな技術力と経験で多くのお客様より選ばれ、2万件以上もの実績がございます。<br>特に設備事業は創業時からの本業と自負しており、官公庁からも一定の評価をいただいております。</div>
-          <a href="#" class="more">正和工業の実績紹介はこちら</a>
+          <a href="https://www.showa-kougyo.co.jp/works/" target="_blank" rel="noopener noreferrer" class="more">正和工業の実績紹介はこちら</a>
         </summary>
         <figure class="item__img"><img src="<?php echo assets_path() ?>img/strength/img-work03.png" alt="総合建設業で積み重ねた豊富な実績" loading="lazy" decoding="async" width="277" height="291"></figure>
       </div>

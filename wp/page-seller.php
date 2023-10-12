@@ -108,16 +108,15 @@
 
   <section class="material">
     <div class="containers">
-      <h2 class="ttl-secondary cW">事業用不動産に関するお役立ち資料</h2>
+      <h2 class="ttl-secondary cW">事業用不動産売却前に読みたいお役立ち資料</h2>
       <div class="flex jcC aiC gap50 desc">
         <figure class="desc__img"><img src="<?php echo assets_path() ?>img/common/img-wp.png" alt=""></figure>
         <summary class="desc__box">
           <h3 class="desc__box--ttl">資料タイトルが入ります。資料タイトルが入ります。<br>資料タイトルが入ります。資料タイトルが入ります。</h3>
           <div class="desc__box--txt">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。</div>
-          <a href="<?php echo esc_url(home_url('/')); ?>catalog/" class="more bgP">サービス資料をダウンロード</a>
+          <a href="<?php echo esc_url(home_url('/')); ?>whitepaper/" class="more bgP">お役立ち資料をダウンロード</a>
         </summary>
       </div>
-      <a href="<?php echo esc_url(home_url('/')); ?>catalog/" class="more cW">サービス資料一覧を見る</a>
     </div>
   </section>
 
@@ -130,7 +129,23 @@
     </div>
   </section>
 
-  <?php get_template_part( 'template-parts/inquiry' ); ?>
+  <section class="inquiry">
+    <div class="containers">
+      <h2 class="ttl-secondary cW"><small>ご相談・お問合せ</small><br>査定は無料！操業中の工事の極秘・<br class="sp-only">非公開売却にも対応！<br>売却をご希望の方は<br class="sp-only">お気軽にご相談ください。</h2>
+      <a href="<?php echo esc_url(home_url('/')); ?>contact/" class="more bgP">お問合せ・ご相談</a>
+      <div class="flex jcC gap20 aiC inquiry__tel">
+        <a href="tel:0120971170" class="tel">0120-971-170</a>
+        <span>平日9:00~18:00（土日祝は除く）</span>
+      </div>
+      <summary class="flex aiC inquiry__box">
+        <div class="inquiry__box--txt">サービス資料やお役立ち資料を<br class="sp-only">ご希望の方はこちら</div>
+        <div class="flex inquiry__box--btn">
+          <a href="<?php echo esc_url(home_url('/')); ?>catalog/" class="more cW tiny"><span>サービス資料</span></a>
+          <a href="<?php echo esc_url(home_url('/')); ?>whitepaper/" class="more cW tiny"><span>お役立ち資料</span></a>
+        </div>
+      </summary>
+    </div>
+  </section>
 
 </main>
 
