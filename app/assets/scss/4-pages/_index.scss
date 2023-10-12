@@ -1,0 +1,57 @@
+/*
+  ----------------
+  TOP
+  ----------------
+*/
+
+.top {
+
+  .hero {
+    background: url("../img/top/bg-hero.webp") 50% / cover no-repeat;
+    &__box {
+      &--sub {
+        display: inline-block;
+        font-weight: bold;
+        padding: 5px 20px;
+        background: #fff;
+        margin-bottom: 30px;
+        clip-path: polygon(3% 0%, 100% 0%, 97% 100%, 0% 100%);
+        @media #{$sp} {
+          font-size: 11px;
+        }
+        span {
+          color: #003D7E;
+        }
+      }
+      .ttl-primary {
+        text-align: left;
+        @media #{$sp} {
+          text-align: center;
+        }
+      }
+      &--txt {
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 80px;
+        @media #{$sp} {
+          margin-bottom: 40px;
+          font-size: 16px;
+        }
+      }
+      .ctabtn {
+        margin: 0;
+        margin-left: 50px;
+        @media #{$sp} {
+          margin-left: 0;
+        }
+        .more {
+          margin: 0;
+          @media #{$sp} {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+  
+}

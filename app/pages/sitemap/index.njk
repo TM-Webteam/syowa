@@ -1,0 +1,88 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="sitemap">
+
+  <section class="hero-m small core">
+    <div class="containers">
+      <div class="hero-m__box">
+        <h1 class="ttl-primary-lower">サイトマップ</h1>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="containers flex fS gap60">
+
+      <div class="group">
+        <div class="group__ttl">サービスについて</div>
+        <ul class="group__list">
+          <li><a href="/service/">サービス詳細</a></li>
+        </ul>
+      </div>
+
+      <div class="group">
+        <div class="group__ttl">正和工業について</div>
+        <ul class="group__list">
+          <li><a href="/strength/">正和工業の強み</a></li>
+          <li><a href="/company/">会社情報</a></li>
+        </ul>
+      </div>
+
+      <div class="group">
+        <div class="group__ttl">お役立ち情報</div>
+        <ul class="group__list">
+          <li><a href="/whitepaper/">お役立ち資料</a></li>
+          <li><a href="/column/">お役立ちコラム</a></li>
+        </ul>
+      </div>
+
+      <div class="group">
+        <div class="group__ttl">お問合せ</div>
+        <ul class="group__list">
+          <li><a href="/catalog/">サービス資料ダウンロード</a></li>
+          <li><a href="/contact/">お問合せ・ご相談</a></li>
+        </ul>
+      </div>
+
+      <div class="group">
+        <div class="group__ttl">ニーズ・課題から探す</div>
+        <ul class="group__list">
+          <li><a href="/buyer/">不動産を買いたい企業様</a></li>
+          <li><a href="/seller/">不動産を売りたい企業様</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="breadcrumb">
+    <div class="containers">
+      <ul class="flex fS">
+        <li><a href="/">トップ</a></li>
+        <li>サイトマップ</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

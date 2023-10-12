@@ -1,0 +1,17 @@
+/*
+  ----------------
+  sng-column
+  ----------------
+*/
+
+.sng-column {
+
+  .main-conts {
+    background: #fff;
+    padding: 40px;
+    @media #{$sp} {
+      padding: 15px;
+    }
+  }
+
+}

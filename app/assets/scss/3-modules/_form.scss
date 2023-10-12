@@ -1,0 +1,282 @@
+/*
+  ----------------
+  form
+  ----------------
+*/
+
+.form {
+  &__note {
+    margin-bottom: 60px;
+    @media #{$sp} {
+      margin-bottom: 30px;
+    }
+    p {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  form {
+    .container {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  &__ttl {
+    text-align: center;
+    color: #003D7E;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #003D7E;
+    margin-bottom: 15px;
+    @media #{$sp} {
+      font-size: 16px;
+      
+    }
+  }
+  .message {
+    color: #eb1600;
+    font-size: 14px;
+    @media #{$sp} {
+      font-size: 12px;
+    }
+  }
+  &__table {
+    background: #fff;
+    padding: 20px 70px 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    @media #{$sp} {
+      padding: 15px;
+    }
+    col {
+      &:first-child {
+        width: 300px;
+        @media #{$sp} {
+          width: 100%;
+        }
+      }
+      &:last-child {
+        width: calc(100% - 300px);
+        @media #{$sp} {
+          width: 100%;
+        }
+      }
+    }
+    tr {
+      border-bottom: 1px solid #EEEEEE;
+      th,td {
+        padding: 30px 0;
+        text-align: left;
+        @media #{$sp} {
+          padding: 15px 0;
+          display: block;
+        }
+      }
+      th {
+        padding-right: 50px;
+        @media #{$sp} {
+          padding: 15px 0 0 0;
+        }
+        .item {
+          display: inline-block;
+          font-weight: 500;
+        }
+        .required,.optional {
+          display: inline-block;
+          font-weight: bold;
+          font-size: 11px;
+          padding: 0 5px;
+          background: #EA0000;
+          color: #fff;
+          border-radius: 20px;
+        }
+        .optional {
+          background: #707070;
+          position: relative;
+          &::after {
+            content: "任意";
+          }
+        }
+      }
+      td {
+        textarea,
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="tel"],
+        input[type="checkbox"] {
+          font-size: 16px;
+          width: 100%;
+          padding: 5px 10px;
+          border: 1px solid #BBBBBB;
+          border-radius: 3px;
+          background: #F8F8F8;
+          height: 40px;
+          margin: 0 10px;
+          @media #{$sp} {
+            font-size: 16px;
+          }
+          &::placeholder {
+            font-size: 13px;
+            font-weight: bold;
+            color: #A5A5A5;
+          }
+        }
+        input[type="checkbox"] {
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+        }
+        textarea {
+          height: 190px;
+          background: #F8F8F8;
+          resize: vertical;
+          @media #{$sp} {
+            height: 100px;
+          }
+          &[name="division_only"] {
+            height: 40px;
+          }
+        }
+        a {
+          color: #0090FF;
+          &:hover {
+            opacity: 1;
+            text-decoration: underline;
+          }
+        }
+        &.label {
+          font-weight: bold;
+        }
+        &.value {
+          display: flex;
+          align-items: center;
+          padding: 10px 0;
+        }
+        .half {
+          width: 45%;
+          span {
+            display: inline;
+          }
+          input[type="text"] {
+            width: 85%;
+            @media #{$sp} {
+              width: 70%;
+            }
+          }
+        }
+        &.comment {
+          padding: 0 0 15px;
+        }
+      }
+    }
+    .privacy-text-master>div {
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(20,19,76,0.2);
+    }
+    button {
+      margin-top: 40px;
+      @media #{$sp} {
+        margin-top: 20px;
+      }
+      &.more.bg-o {
+        transition: all .3s;
+        width: 300px;
+        @media #{$sp} {
+          width: 85%;
+        }
+      }
+    }
+    input[type="button"] {
+      display: block;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      padding: 20px 50px;
+      background: #F29600;
+      line-height: 1;
+      margin: 0 auto;
+      border-radius: 37px;
+      border: 2px solid #F29600;
+      transition: all .3s;
+      width: 300px;
+      @media #{$sp} {
+        width: 85%;
+        font-size: 14px;
+      }
+    }
+    .required {
+      color: red;
+      font-size: 12px;
+      display: inline-block;
+      margin-left: 10px;
+      vertical-align: middle;
+      position: relative;
+      &::after {
+        content: "必須";
+      }
+    }
+  }
+  .button_area {
+    display: flex;
+    margin-top: 30px;
+    @media #{$sp} {
+      margin-top: 15px;
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  #button_confirm_back {
+    border: 2px solid #999;
+    background: #999;
+  }
+}
+
+.side-form {
+  .form {
+    &__ttl {
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+    &__table {
+      padding: 30px;
+      @media #{$sp} {
+        padding: 15px;
+      }
+      col {
+        &:first-child {
+          width: 100%;
+        }
+        &:last-child {
+          width: 100%;
+        }
+      }
+      tr {
+        th,td {
+          display: block;
+          padding: 10px 0;
+        }
+        th {
+          padding-right: 0;
+        }
+        td {
+          padding: 0 0 15px;
+          textarea,
+          input[type="text"],
+          input[type="email"],
+          input[type="url"],
+          input[type="tel"],
+          input[type="checkbox"] {
+            margin: 0;
+          }
+        }
+      }
+      .more {
+        width: 100%;
+        padding: 13px;
+      }
+    }
+  }
+}

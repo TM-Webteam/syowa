@@ -1,0 +1,213 @@
+/*
+  ----------------
+  mktoForm
+  ----------------
+*/
+
+//マルケト 共通
+.mkto {
+  background: #fff !important;
+  padding: 60px 70px !important;
+  @media #{$sp} {
+    padding: 20px 15px !important;
+  }
+  .mktoForm {
+    font-family: "Noto Sans JP","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","游ゴシック","Yu Gothic","游ゴシック体","YuGothic","ＭＳ Ｐゴシック","MS PGothic",sans-serif !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    text-align: left;
+    padding: 0 !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    @media #{$sp} {
+
+    }
+    textarea,
+    select,
+    input {
+      font-size: 16px;
+      width: 100%;
+      padding: 5px 10px;
+      border: 1px solid #bbb;
+      border-radius: 3px;
+      background: #f8f8f8;
+      height: 40px;
+      max-width: 100%;
+      &[type="checkbox"] {
+        width: 20px !important;
+        height: 20px !important;
+      }
+    }
+    .mktoError{
+      right: auto;
+      left: 0;
+    }
+    .mktoGutter {
+      display: none;
+    }
+    .mktoFormRow {
+      margin-bottom: 0 !important;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+      padding: 30px 0;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      @media #{$sp} {
+        padding: 15px 0;
+      }
+      .mktoFieldDescriptor {
+        margin-bottom: 0 !important;
+      } 
+      .mktoOffset {
+        display: none;
+        float: none;
+      }
+      &.name {
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+      }
+      &.agree .mktoCheckboxList {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        label {
+          font-size: 14px;
+        }
+      }
+      &.note a {
+        font-size: 16px;
+        text-decoration: underline;
+        color: #0497b5;
+      }
+      .mktoLabel {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 0;
+        @media #{$sp} {
+          margin-bottom: 10px;
+          display: block;
+        }
+      }
+      .item {
+        font-size: 16px;
+        font-weight: 700;
+        margin-right: 10px;
+      }
+      .required {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 11px;
+        padding: 0 5px;
+        background: red;
+        color: #fff;
+        border-radius: 3px;
+        min-width: 32px;
+        &::after {
+          content: "必須";
+          white-space: nowrap;
+        }
+      }
+    }
+    .mktoFieldWrap,
+    .mktoLabel,
+    .mktoLabel {
+      float: none !important;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      @media #{$sp} {
+        display: block;
+      }
+    }
+    .mktoHtmlText.mktoHasWidth {
+      width: 100% !important;
+    }
+    .mktoFormCol,
+    .mktoHasWidth {
+      width: 100% !important;
+      float: none;
+    }
+    // .mktoLabel {
+    //   width: 300px !important;
+    // }
+    // .mktoLogicalField {
+    //   width: calc(100% - 400px - 30px) !important;
+    // }
+    
+    .mktoButtonRow {
+      max-width: 100% !important;
+      width: 100%;
+      .mktoButtonWrap {
+        max-width: 250px !important;
+        &.mktoSimple {
+          margin-left: auto !important;
+          margin-right: auto !important;
+          .mktoButton {
+            display: block !important;
+            width: 400px !important;
+            color: #6E97E5;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            background: #fff;
+            padding: 17px;
+            position: relative;
+            border-radius: 50px;
+            margin: 30px auto 0;
+            border: 2px solid #6E97E5 !important;
+            transition: all .3s;
+            @media #{$sp} {
+              font-size: 14px;
+              padding: 13px;
+              width: 85% !important;
+            }
+            &:hover {
+              background: #6E97E5;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.side-form {
+  .mkto {
+    padding: 15px !important;
+    .mktoForm {
+      .mktoFormRow {
+        padding: 15px 0;
+        .mktoLabel {
+          display: block;
+          margin-bottom: 10px;
+        }
+      }
+      .mktoFieldWrap {
+        flex-direction: column;
+      }
+      .mktoButtonRow {
+        .mktoButtonWrap {
+          &.mktoSimple {
+            .mktoButton {
+              width: 85% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.wp-form {
+  .mktoForm {
+    .mktoFormRow {
+      .mktoCheckboxList {
+        display: block;
+      }
+    }
+  }
+}

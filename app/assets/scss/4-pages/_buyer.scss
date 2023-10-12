@@ -1,0 +1,147 @@
+/*
+  ----------------
+  buyer
+  ----------------
+*/
+
+.buyer {
+
+  .hero-m {
+    background: url("../img/buyer/bg-hero.webp") 50% / cover no-repeat;
+    height: 490px;
+    @media #{$sp} {
+      background: url("../img/buyer/bg-hero-sp.webp") 50% / cover no-repeat;
+      height: 500px;
+    }
+    &__box--lead {
+      color: #000;
+      margin-bottom: 40px;
+      @media #{$sp} {
+        margin-bottom: 20px;
+      }
+    }
+    .ttl-primary-lower {
+      line-height: 1.5;
+      margin-bottom: 60px;
+      @media #{$sp} {
+
+      }
+    }
+  }
+
+  .introduction {
+    .card {
+      &__box {
+        background: #fff;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+        padding: 30px;
+        height: 300px;
+        margin: 15px 15px 40px;
+        @media #{$sp} {
+          padding: 15px;
+          height: auto;
+          margin: 15px 15px 20px;
+        }
+        &--img {
+          width: 30%;
+          @media #{$sp} {
+            width: 85%;
+            margin: 0 auto 15px;
+          }
+        }
+        &--details {
+          width: calc(100% - 30% - 20px);
+          @media #{$sp} {
+            width: 100%;
+          }
+          dt {
+            font-weight: bold;
+            color: #003D7E;
+            width: 85px;
+          }
+          dd {
+            width: calc(100% - 85px);
+          }
+        }
+      }
+    }
+  }
+
+  .consult {
+    background: #F0F2F6;
+    &__had {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      padding: 100px 0 30px;
+      background-image: url("../img/buyer/img-consult01.png"), url("../img/buyer/img-consult02.png");
+      background-repeat: no-repeat, no-repeat;
+      background-position: left 20% top 50%, right 20% top 50%;
+      background-size: contain, contain;
+      @media #{$sp} {
+        font-size: 16px;
+        padding: 0 0 15px;
+        background: none;
+      }
+    }
+    &__box {
+      background: #fff;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+      &--ttl {
+        color: #003D7E;
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        padding: 30px;
+        position: relative;
+        @media #{$sp} {
+          font-size: 18px;
+          padding: 15px;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 40px;
+          margin: auto;
+          width: 144px;
+          height: 40px;
+          background: url("../img/buyer/img-open.png") 100% 50% / contain no-repeat;
+          @media #{$sp} {
+            right: 10px;
+            width: 134px;
+            height: 30px;
+          }
+        }
+        &.open {
+          &::before {
+            width: 96px;
+            height: 40px;
+            background: url("../img/buyer/img-close.png") 100% 50% / contain no-repeat;
+            @media #{$sp} {
+              width: 86px;
+              height: 30px;
+            }
+          }
+        }
+      }
+      &--form {
+        display: none;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 90%;
+          height: 1px;
+          background: #003D7E;
+        }
+      }
+    }
+  }
+
+}

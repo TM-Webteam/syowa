@@ -1,0 +1,100 @@
+/*
+  ----------------
+  company
+  ----------------
+*/
+
+.company {
+  
+  .hero-m {
+    background: url("../img/company/bg-hero.webp") 50% / cover no-repeat;
+  }
+
+  .intro {
+    &__box {
+      text-align: center;
+      background: #fff;
+      padding: 40px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      @media #{$sp} {
+        padding: 15px;
+      }
+      dt {
+        color: #003D7E;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        @media #{$sp} {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .history {
+    .containers.pt0 {
+      padding: 0 30px 70px;
+      @media #{$sp} {
+        padding: 0 15px 35px;
+      }
+    }
+    &__desc {
+      border: 1px solid #ddd;
+      dt,dd {
+        padding: 10px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media #{$sp} {
+          padding: 5px 15px;
+        }
+      }
+      &.v2 {
+        dt {
+          width: 45%;
+          @media #{$sp} {
+            width: 100%;
+          }
+        }
+        dd {
+          width: calc(100% - 45%);
+          @media #{$sp} {
+            width: 100%;
+          }
+        }
+      }
+      dt {
+        width: 21%;
+        font-weight: 700;
+        background: #ddd;
+        @media #{$sp} {
+          width: 100%;
+        }
+        &:not(:last-of-type) {
+          border-bottom: 1px solid #fff;
+        }
+      }
+      dd {
+        width: calc(100% - 21%);
+        background: #fff;
+        @media #{$sp} {
+          width: 100%;
+        }
+        &:not(:last-of-type) {
+          border-bottom: 1px solid #DDDDDD;
+        }
+        a {
+          display: inline;
+          color: blue;
+          &:hover {
+            opacity: 1;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+}
+

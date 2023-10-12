@@ -1,0 +1,141 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main>
+
+  <nav class="pagination">
+		<div class="nav-links">
+      <a class="prev page-numbers" href="#"><span>Previous</span></a>
+      <a class="page-numbers" href="#">1</a>
+      <span class="page-numbers current">2</span>
+      <a class="page-numbers" href="#">3</a>
+      <a class="next page-numbers" href="#"><span>Next</span></a>
+    </div>
+	</nav>
+
+  <section class="casestudy bg-G">
+    <div class="containers">
+      <h2 class="ttl-secondary">「ZEUS INBEST」のケーススタディ</h2>
+      <div class="lead">不動産仲介サービス「ZEUS INBEST」のお取り引き例をご紹介いたします。</div>
+
+      <div class="casewrap">
+        <h3 class="casewrap__had"><span>CASE 01</span></h3>
+        <div class="casewrap__lead">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</div>
+        <div class="flex casewrap__box">
+          <div class="casewrap__be">
+            <div class="flex inherit casewrap__be--box">
+              <figure class="casewrap__be--img">
+                <img src="/assets/img/common/img-main.svg" alt="売主様">
+                <figcaption class="casewrap__be--ttl">売主様</figcaption>
+              </figure>
+              <summary class="casewrap__be--txt">テキストが入ります。テキストが入ります。テキストが入ります。</summary>
+            </div>
+            <div class="flex inherit casewrap__be--box">
+              <summary class="casewrap__be--txt reverse">テキストが入ります。テキストが入ります。テキストが入ります。</summary>
+              <figure class="casewrap__be--img">
+                <img src="/assets/img/common/img-main.svg" alt="買主様">
+                <figcaption class="casewrap__be--ttl">買主様</figcaption>
+              </figure>
+            </div>
+          </div>
+          <dl class="casewrap__af">
+            <dt class="casewrap__af--ttl">ZEUS INBESTが解決！</dt>
+            <dd class="casewrap__af--txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="casewrap">
+        <h3 class="casewrap__had"><span>CASE 02</span></h3>
+        <div class="casewrap__lead">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</div>
+        <div class="flex casewrap__box">
+          <div class="casewrap__be">
+            <div class="flex inherit casewrap__be--box">
+              <figure class="casewrap__be--img">
+                <img src="/assets/img/common/img-main.svg" alt="売主様">
+                <figcaption class="casewrap__be--ttl">売主様</figcaption>
+              </figure>
+              <summary class="casewrap__be--txt">テキストが入ります。テキストが入ります。テキストが入ります。</summary>
+            </div>
+            <div class="flex inherit casewrap__be--box">
+              <summary class="casewrap__be--txt reverse">テキストが入ります。テキストが入ります。テキストが入ります。</summary>
+              <figure class="casewrap__be--img">
+                <img src="/assets/img/common/img-main.svg" alt="買主様">
+                <figcaption class="casewrap__be--ttl">買主様</figcaption>
+              </figure>
+            </div>
+          </div>
+          <dl class="casewrap__af">
+            <dt class="casewrap__af--ttl">ZEUS INBESTが解決！</dt>
+            <dd class="casewrap__af--txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="casewrap">
+        <h3 class="casewrap__had"><span>CASE 03</span></h3>
+        <div class="casewrap__lead">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</div>
+        <div class="flex casewrap__box">
+          <div class="casewrap__be">
+            <div class="flex inherit casewrap__be--box">
+              <figure class="casewrap__be--img">
+                <img src="/assets/img/common/img-main.svg" alt="売主様">
+                <figcaption class="casewrap__be--ttl">売主様</figcaption>
+              </figure>
+              <summary class="casewrap__be--txt">テキストが入ります。テキストが入ります。テキストが入ります。</summary>
+            </div>
+            <div class="flex inherit casewrap__be--box">
+              <summary class="casewrap__be--txt reverse">テキストが入ります。テキストが入ります。テキストが入ります。</summary>
+              <figure class="casewrap__be--img">
+                <img src="/assets/img/common/img-main.svg" alt="買主様">
+                <figcaption class="casewrap__be--ttl">買主様</figcaption>
+              </figure>
+            </div>
+          </div>
+          <dl class="casewrap__af">
+            <dt class="casewrap__af--ttl">ZEUS INBESTが解決！</dt>
+            <dd class="casewrap__af--txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="speech"><span>関東圏の工場・倉庫の物件をお探しならお気軽にご相談ください！</span></div>
+      <a href="/contact/" class="more bgP long">ご相談・お問合せはこちら</a>
+
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="containers">
+      <h2 class="ttl-secondary cW">正和工業とは</h2>
+      <div class="lead cW">正和工業は1968年の創業より、数多くの施工実績や、国際標準化機構などの認証、<br>技術力向上のための資格取得を積み重ねてきました。</div>
+      <ul class="flex aiC">
+        <li><img src="/assets/img/common/img-about01.png" alt="保有資格 90種以上"></li>
+        <li><img src="/assets/img/common/img-about02.png" alt="施工実績 20,000件以上"></li>
+        <li><img src="/assets/img/common/img-about03.png" alt="取得認証 20種以上"></li>
+      </ul>
+      <a href="/strength/" class="more">詳しくはこちら</a>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

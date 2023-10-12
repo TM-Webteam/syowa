@@ -1,0 +1,94 @@
+/*
+  ----------------
+  各　見出し
+  ----------------
+*/
+.ttl-primary {
+	font-size: 42px;
+	font-weight: 700;
+	line-height: 1.47;
+  text-align: center;
+	margin-bottom: 30px;
+  color: #fff;
+	@media #{$sp} {
+		font-size: 22px;
+		margin-bottom: 15px;
+	}
+}
+
+.ttl-primary-lower {
+  font-size: 36px;
+	font-weight: 700;
+	line-height: 1.94;
+  text-align: center;
+	margin-bottom: 40px;
+  color: #fff;
+	@media #{$sp} {
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+  &.cB {
+    color: #000;
+  }
+}
+
+.ttl-secondary {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1.5;
+	text-align: center;
+	margin-bottom: 40px;
+	@media #{$sp} {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+  &.cW {
+    color: #fff;
+  }
+  small {
+    display: inline-block;
+    font-size: 22px;
+    margin-bottom: 15px;
+    @media #{$sp} {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.ttl-tertiary {
+	font-size: 20px;
+	font-weight: 700;
+  text-align: center;
+	margin-bottom: 30px;
+  color: #003D7E;
+	@media #{$sp} {
+		font-size: 16px;
+		margin-bottom: 15px;
+	}
+}
+
+.ttl-quaternary {
+	
+}
+
+.ttl-quinary {
+	
+}
+
+.lead {
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 40px;
+	@media #{$sp} {
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+  &.cW {
+    color: #fff;
+  }
+}
+
+.note {
+	font-size: 12px;
+}

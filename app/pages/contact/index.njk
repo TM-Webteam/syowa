@@ -1,0 +1,147 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="contact bg-LP">
+
+  <section class="hero-m core">
+    <div class="containers">
+      <div class="hero-m__box">
+        <h1 class="ttl-primary-lower">お問合せ・ご相談</h1>
+        <div class="hero-m__box--lead">不動産仲介サービス「ZEUS INBEST」に関する<br class="sp-only">お問合せ・ご相談はお気軽にご連絡ください。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="form">
+    <div class="containers">
+      <div class="form__note">
+        <p>● 以下フォームにご連絡先、お問合せ内容をご記入の上、送信してください。担当よりご連絡申し上げます。</p>
+      </div>
+      <!-- <form action="">
+        
+        <div class="form__table">
+          <div class="form__ttl">お問合せ・ご相談フォーム</div>
+          <table>
+            <colgroup>
+              <col>
+              <col>
+            </colgroup>
+            <tbody>
+            <tr>
+              <th class="flex aiC">
+                <span class="item">お問合せ・ご相談種別</span>
+                <span class="required"></span>
+              </th>
+              <td>
+                <div class="flex fS aiC"><input type="checkbox">不動産を購入したい</div>
+                <div class="flex fS aiC"><input type="checkbox">不動産を売却したい</div>
+                <div class="flex fS aiC"><input type="checkbox">その他</div>
+              </td>
+            </tr>
+            <tr>
+              <th class="flex aiC">
+                <span class="item">会社名</span>
+                <span class="required"></span>
+              </th>
+              <td><input type="text" placeholder="例）○○○○株式会社"></td>
+            </tr>
+            <tr>
+              <th class="flex aiC">
+                <span class="item">部署名</span>
+                <span class="required"></span>
+              </th>
+              <td><input type="text" placeholder="例）システム管理室"></td>
+            </tr>
+            <tr>
+              <th class="flex aiC">
+                <span class="item">役職名</span>
+                <span class="optional"></span>
+              </th>
+              <td><input type="text" placeholder="例）システム管理室"></td>
+            </tr>
+            <tr>
+              <th class="flex aiC">
+                <span class="item">ご担当者名</span>
+                <span class="required"></span>
+              </th>
+              <td>
+                <div class="flex aiC">
+                  <p class="flex fS aiC half"><span>氏：</span><input type="text" placeholder="例）佐藤"></p>
+                  <p class="flex fS aiC half"><span>名：</span><input type="text" placeholder="例）太郎"></p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th class="flex aiC">
+                <span class="item">メールアドレス</span>
+                <span class="required"></span>
+              </th>
+              <td><input type="email" placeholder="例）sample@gmail.com.jp"></td>
+            </tr>
+            <tr>
+              <th class="flex aiC">
+                <span class="item">電話番号</span>
+                <span class="required"></span>
+              </th>
+              <td><input type="tel" placeholder="例）090-1234-5678"></td>
+            </tr>
+            <tr>
+              <th class="flex aiC">
+                <span class="item">お問合せ内容詳細</span>
+                <span class="required"></span>
+              </th>
+              <td><textarea placeholder="例）テキストテキスト。"></textarea></td>
+            </tr>
+            <tr>
+              <th class="flex aiC">
+                <span class="item">個人情報の取扱いについて</span>
+                <span class="required"></span>
+              </th>
+              <td><div class="flex fS aiC"><input type="checkbox">同意する</div><p>弊社Webサイトの<a href="/privacy/">プライバシーポリシー</a>をご確認の上、ご同意いただき送信をお願いいたします。</p></td>
+            </tr>
+          </tbody></table>
+          <button type="submit" class="more bgY">確認画面へ進む</button>
+        </div>
+      </form> -->
+
+      <div class="mkto">
+        <div class="form__ttl">お問合せ・ご相談フォーム</div>
+        <script src="//lp.ndsoft.jp/js/forms2/js/forms2.min.js"></script>
+        <form id="mktoForm_4260"></form>
+        <script>MktoForms2.loadForm("//lp.ndsoft.jp", "524-EUC-041", 4260);</script>
+      </div>
+      
+      
+    </div>
+  </section>
+
+  <section class="breadcrumb">
+    <div class="containers">
+      <ul class="flex fS">
+        <li><a href="/">トップ</a></li>
+        <li>お問合せ・ご相談</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

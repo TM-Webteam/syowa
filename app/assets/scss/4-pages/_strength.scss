@@ -1,0 +1,113 @@
+/*
+  ----------------
+  strength
+  ----------------
+*/
+
+.strength {
+
+  .hero-m {
+    background: url("../img/strength/bg-hero.webp") 50% / cover no-repeat;
+    height: 430px;
+    @media #{$sp} {
+      background: url("../img/strength/bg-hero-sp.webp") 50% / cover no-repeat;
+      height: 500px;
+    }
+    &__box--lead {
+      color: #000;
+      margin-bottom: 40px;
+      @media #{$sp} {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .intro {
+    &__box {
+      width: calc(100% / 2 - 30px);
+      @media #{$sp} {
+        width: 100%;
+      }
+      dd {
+        &:not(:last-child) {
+          margin-bottom: 30px;
+          @media #{$sp} {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+    &__img {
+      width: calc(100% / 2 - 30px);
+      @media #{$sp} {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .work {
+    .containers {
+      max-width: 910px;
+    }
+    .item {
+      &:not(:last-child) {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 30px;
+        @media #{$sp} {
+          padding-bottom: 15px;
+          margin-bottom: 15px;
+        }
+      }
+      &__box {
+        width: calc(100% - 30% - 30px);
+        @media #{$sp} {
+          width: 100%;
+        }
+        &--num {
+          font-family: "din-2014", sans-serif;
+          font-weight: 700;
+          font-style: normal;
+          font-size: 76px;
+          line-height: 1;
+          margin-bottom: 15px;
+          color: #003D7E;
+          @media #{$sp} {
+            font-size: 30px;
+            margin-bottom: 10px;
+            text-align: center;
+          }
+        }
+        &--ttl {
+          font-size: 22px;
+          font-weight: bold;
+          line-height: 1.5;
+          margin-bottom: 30px;
+          @media #{$sp} {
+            font-size: 16px;
+            margin-bottom: 15px;
+            text-align: center;
+          }
+        }
+        &--txt {
+          line-height: 1.875;
+        }
+        .more {
+          margin: 30px 0 0;
+          @media #{$sp} {
+            margin: 15px auto 0;
+          }
+        }
+      }
+      &__img {
+        width: 30%;
+        @media #{$sp} {
+          width: 50%;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+}

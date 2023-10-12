@@ -1,0 +1,186 @@
+{% extends "layout/default.njk" %}
+
+{# Custom SEO tags, leave blank to apply the default values #}
+{% set title = "" %}
+{% set description = "" %}
+{% set keywords = "" %}
+
+{# Page settings and also body class #}
+{% set page = "" %}
+
+{# Custom tags before </head> #}
+{% block customHead %}
+{% endblock %}
+
+{# Custom tags before </body> #}
+{% block customJs %}  
+{% endblock %}
+
+{# Main content #}
+{% block content %}
+
+<main class="top">
+
+  <section class="hero">
+    <div class="containers">
+      <div class="hero__box">
+        <div class="hero__box--sub"><span>「関東近郊」</span>工場・倉庫など事業用不動産の売買サポート</div>
+        <h1 class="ttl-primary">事業用不動産を<br class="sp-only">買いたい方・<br class="pc-only">売りたい方双方に<br class="sp-only">大きなメリットを</h1>
+        <div class="hero__box--txt">事業用不動産売買の仲介からお客様のニーズを満たした<br class="pc-only">リノベーションまでワンストップでサポート可能です。</div>
+        <div class="ctabtn">
+          <div class="balloon"><span class="balloon__txt">製品の特長や料金が3分で分かる！</span></div>
+          <a href="/catalog/" class="more bgP thumb">サービス資料ダウンロード</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="support">
+    <div class="containers">
+      <h2 class="ttl-secondary">売り手と買い手をつなぐサポートを<br class="sp-only">いたします。</h2>
+      <div class="flex jcC gap30 card">
+        <a href="/buyer/" class="card__box">
+          <figure class="card__box--img"><img src="/assets/img/top/img-support01.jpg" alt="" loading="lazy" decoding="async" width="470" height="264"></figure>
+          <h3 class="card__box--ttl">不動産を<span>買いたい</span>方はこちら</h3>
+          <div class="card__box--txt"><span class="marker">関東圏で物件をお探しの経営者様へ。</span><br>工場・倉庫を中心とした取り扱い物件や<br>
+            サービス詳細についてはこちらをご覧ください。</div>
+        </a>
+        <a href="/seller/" class="card__box">
+          <figure class="card__box--img"><img src="/assets/img/top/img-support02.jpg" alt="" loading="lazy" decoding="async" width="470" height="264"></figure>
+          <h3 class="card__box--ttl">不動産を<span>売りたい</span>方はこちら</h3>
+          <div class="card__box--txt">お客様の<span class="marker">所有不動産の確実な売却、</span><br>更に<span class="marker">高価売却をするサポート</span>まで！<br>他にはないサービスの詳細はこちらから<br class="sp-only">ご覧ください。</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="features bg-G">
+    <div class="containers">
+      <h2 class="ttl-secondary">不動産仲介サービス<br class="sp-only">「ZEUS INBEST」の特長</h2>
+      <div class="lead">工場・倉庫物件ならお任せください！<br>正和工業だからこそできる、リノベーションまで<br class="sp-only">サポートした不動産仲介サービスです。</div>
+      <ul class="flex gap30 card">
+        <li class="card__box">
+          <h3 class="ttl-tertiary">関東の工場・倉庫など<br>不動産多数</h3>
+          <figure class="card__box--img"><img src="/assets/img/common/img-features01.jpg" alt="" loading="lazy" decoding="async" width="287" height="161"></figure>
+          <div class="card__box--txt">関東で工場や倉庫のリノベーションを多く手掛けてきた正和工業だからこそ取り扱える、工場や倉庫の物件が多数ございます。</div>
+        </li>
+        <li class="card__box">
+          <h3 class="ttl-tertiary">建設のプロだからこそできる<br>情報提供</h3>
+          <figure class="card__box--img"><img src="/assets/img/common/img-features03.jpg" alt="" loading="lazy" decoding="async" width="287" height="161"></figure>
+          <div class="card__box--txt">買い手様には該当物件の良し悪しについて、売り手様にはリノベーションすべき点など、物件売買の前でも、建設のプロだからこそできる情報提供をいたします。</div>
+        </li>
+        <li class="card__box">
+          <h3 class="ttl-tertiary">修繕工事・<br>リノベーションもサポート</h3>
+          <figure class="card__box--img"><img src="/assets/img/common/img-features02.jpg" alt="" loading="lazy" decoding="async" width="287" height="161"></figure>
+          <div class="card__box--txt">単なる不動産売買だけではなく、正和だから実現できる、お客様のニーズにお応えしたリノベーションもサポートいたします。</div>
+        </li>
+      </ul>
+      <a href="/service/" class="more">サービスの詳細を見る</a>
+    </div>
+  </section>
+
+  <section class="forte">
+    <div class="containers">
+      <h2 class="ttl-secondary">正和工業の強み</h2>
+      <div class="lead">建設業で積み重ねてきた経験とノウハウで、<br>お客様のニーズにお応えする不動産仲介を<br class="sp-only">サポートいたします。</div>
+      <figure class="forte__img pc-only"><img src="/assets/img/common/img-forte.svg" alt="正和工業の強み" loading="lazy" decoding="async" width="1100" height="287"></figure>
+      <ul class="flex jcC gap30 card">
+        <li class="card__box">
+          <figure class="card__box--img sp-only"><img src="/assets/img/common/img-forte01.svg" alt="お客様・社会に寄り添ったリノベーション" loading="lazy" decoding="async" width="277" height="291"></figure>
+          <h3 class="ttl-tertiary">お客様・社会に寄り添った<br>リノベーション</h3>
+          <div class="card__box--txt">お客様の課題解決はもちろん、地球への貢献を視野に入れたリノベーションを実施いたします。</div>
+        </li>
+        <li class="card__box">
+          <figure class="card__box--img sp-only"><img src="/assets/img/common/img-forte02.svg" alt="正和工業ならではの提案力" loading="lazy" decoding="async" width="277" height="291"></figure>
+          <h3 class="ttl-tertiary">正和工業ならではの<br>提案力</h3>
+          <div class="card__box--txt">建物の価値を高めるために、リノベーションを知り尽くした正和工業ならではの提案をいたします。</div>
+        </li>
+        <li class="card__box">
+          <figure class="card__box--img sp-only"><img src="/assets/img/common/img-forte03.svg" alt="総合建設業で積み重ねた豊富な実績" loading="lazy" decoding="async" width="277" height="291"></figure>
+          <h3 class="ttl-tertiary">総合建設業で積み重ねた<br>豊富な実績</h3>
+          <div class="card__box--txt">確かな技術力と経験で多くのお客様より選ばれ、2万件以上もの実績がございます。</div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="material">
+    <div class="containers">
+      <h2 class="ttl-secondary cW">事業用不動産に関するお役立ち資料</h2>
+      <div class="flex jcC aiC gap50 desc">
+        <figure class="desc__img"><img src="/assets/img/common/img-wp.png" alt=""></figure>
+        <summary class="desc__box">
+          <h3 class="desc__box--ttl">資料タイトルが入ります。資料タイトルが入ります。<br>資料タイトルが入ります。資料タイトルが入ります。</h3>
+          <div class="desc__box--txt">資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。資料の紹介文が入ります。</div>
+          <a href="/catalog/" class="more bgP">サービス資料をダウンロード</a>
+        </summary>
+      </div>
+      <a href="/catalog/" class="more cW">サービス資料一覧を見る</a>
+    </div>
+  </section>
+
+  <section class="sec-column">
+    <div class="containers">
+      <h2 class="ttl-secondary">事業用不動産お役立ちコラム</h2>
+      <div class="flex jcC gap30 card">
+        <a href="#" class="card__wrap">
+          <figure class="card__wrap--img"><img src="/assets/img/common/img-sec-column01.jpg" alt="" loading="lazy" decoding="async" width="347" height="195"></figure>
+          <summary class="card__box">
+            <div><span class="cat">カテゴリ名</span></div>
+            <h3 class="card__box--ttl">コラムタイトルが入りますコラムタイトルが入りますコラムタイトルが入りますコラムタイトルが入りますコラムタイトルが入りますコラムタイトルが入ります</h3>
+            <div><span class="time">2023.7.18</span></div>
+          </summary>
+        </a>
+        <a href="#" class="card__wrap">
+          <figure class="card__wrap--img"><img src="/assets/img/common/img-sec-column01.jpg" alt="" loading="lazy" decoding="async" width="347" height="195"></figure>
+          <summary class="card__box">
+            <div><span class="cat">カテゴリ名</span></div>
+            <h3 class="card__box--ttl">コラムタイトルが入りますコラムタイトルが入りますコラムタイトルが入りますコラムタイトルが入りますコラムタイトルが入りますコラムタイトルが入ります</h3>
+            <div><span class="time">2023.7.18</span></div>
+          </summary>
+        </a>
+        <a href="#" class="card__wrap">
+          <figure class="card__wrap--img"><img src="/assets/img/common/img-sec-column01.jpg" alt="" loading="lazy" decoding="async" width="347" height="195"></figure>
+          <summary class="card__box">
+            <div><span class="cat">カテゴリ名</span></div>
+            <h3 class="card__box--ttl">コラムタイトルが入りますコラムタイトルが入りますコラムタイトルが入りますコラムタイトルが入りますコラムタイトルが入りますコラムタイトルが入ります</h3>
+            <div><span class="time">2023.7.18</span></div>
+          </summary>
+        </a>
+      </div>
+      <a href="/column/" class="more">お役立ちコラム一覧を見る</a>
+    </div>
+  </section>
+
+  <section class="sec-info bg-G">
+    <div class="flex jcC gap50 aiC containers">
+      <figure class="sec-info__img"><img src="/assets/img/top/img-info.jpg" alt="会社情報" loading="lazy" decoding="async" width="267" height="356"></figure>
+      <div class="sec-info__box">
+        <h2 class="ttl-secondary">会社情報</h2>
+        <h3 class="sec-info__box--ttl">正和工業株式会社は1963年の創業より、建築リノベーションをはじめとした数々の事業を展開してきた総合建設業です。<br>積み重ねてきた施工実績と、豊富な人材、培った技術力・ノウハウを活かし、工種を問わない施工体制でお客様の多様化するニーズにお応えいたします。</h3>
+        <a href="/company/" class="more">詳しくはこちら</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="inquiry">
+    <div class="containers">
+      <h2 class="ttl-secondary cW"><small>ご相談・お問合せ</small><br>不動産仲介サービス<br class="sp-only">「ZEUS INBEST」に関する<br>お問合せやご相談はお気軽に<br class="sp-only">ご連絡ください。</h2>
+      <a href="/contact/" class="more bgP">お問合せ・ご相談</a>
+      <div class="flex jcC gap20 aiC inquiry__tel">
+        <a href="tel:0120971170" class="tel">0120-971-170</a>
+        <span>平日9:00~18:00（土日祝は除く）</span>
+      </div>
+      <summary class="flex aiC inquiry__box">
+        <div class="inquiry__box--txt">サービス資料やお役立ち資料を<br class="sp-only">ご希望の方はこちら</div>
+        <div class="flex inquiry__box--btn">
+          <a href="/catalog/" class="more cW tiny"><span>サービス資料</span></a>
+          <a href="/whitepaper/" class="more cW tiny"><span>お役立ち資料</span></a>
+        </div>
+      </summary>
+    </div>
+  </section>
+
+</main>
+
+{% endblock %}

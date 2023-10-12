@@ -1,0 +1,129 @@
+/*
+  ----------------
+  Footer
+  ----------------
+*/
+
+footer {
+  background: linear-gradient(45deg, #111, #333);
+  color: #fff;
+  .containers.nav {
+    padding: 60px 30px 30px;
+    @media #{$sp} {
+      padding: 30px 15px 15px;
+    }
+    .f-logo {
+      max-width: 240px;
+      margin-bottom: 30px;
+      @media #{$sp} {
+        max-width: 50%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .nav {
+    &__box {
+      width: calc(100% / 4 - 20px);
+      font-size: 12px;
+      @media #{$sp} {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      &--ttl {
+        font-weight: bold;
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #4E4E4E;
+        @media #{$sp} {
+          margin-bottom: 15px;
+        }
+      }
+      &--list {
+        li {
+          margin-bottom: 10px;
+          padding-left: 1.5em;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 4px;
+            height: 4px;
+            border: 1px solid;
+            border-color: #fff #fff transparent transparent;
+            transform: rotate(45deg);
+          }
+          a {
+            &:hover {
+              opacity: 1;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  .aside {
+    color: #fff;
+    margin-top: 40px;
+    padding-top: 30px;
+    font-size: 14px;
+    border-top: 1px solid #4E4E4E;
+    @media #{$sp} {
+      font-size: 12px;
+      padding-top: 15px;
+      margin-top: 20px;
+    }
+    &__nav {
+      margin-bottom: 10px;
+      li {
+        padding: 0 30px;
+        position: relative;
+        @media #{$sp} {
+          padding: 0 10px;
+        }
+        &:not(:last-child) {
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            height: 10px;
+            width: 1px;
+            background: #fff;
+          }
+        }
+        a {
+          &:hover {
+            opacity: 1;
+            text-decoration: underline;
+          }
+          &.blank {
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: -15px;
+              margin: auto;
+              width: 9px;
+              height: 9px;
+              background: url("../img/common/blank.svg") 50% / contain no-repeat;
+            }
+          }
+        }
+      }
+    }
+    &__copy {
+      text-align: center;
+      @media #{$sp} {
+        font-size: 10px;
+      }
+    }
+  }
+  
+}

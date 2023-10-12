@@ -1,0 +1,33 @@
+/*
+  ----------------
+  seller
+  ----------------
+*/
+
+.seller {
+
+  .hero-m {
+    background: url("../img/seller/bg-hero.webp") 50% / cover no-repeat;
+    height: 490px;
+    @media #{$sp} {
+      background: url("../img/seller/bg-hero-sp.webp") 50% / cover no-repeat;
+      height: 500px;
+    }
+    &__box--lead {
+      color: #000;
+      margin-bottom: 40px;
+      @media #{$sp} {
+        margin-bottom: 20px;
+      }
+    }
+    .ttl-primary-lower {
+      line-height: 1.5;
+      margin-bottom: 60px;
+      @media #{$sp} {
+
+      }
+    }
+  }
+
+
+}
