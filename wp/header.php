@@ -18,8 +18,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="format-detection" content="telephone=no">
 
 <!-- Web font -->
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://use.typekit.net/wsa2ieb.css">
+<link rel="preconnect" href="https://use.typekit.net/wsa2ieb.css" as="style">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" as="style">
 
 <!-- Style sheet -->
 <link rel="stylesheet" href="<?php echo assets_path() ?>css/main.css">

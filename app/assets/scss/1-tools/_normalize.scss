@@ -13,6 +13,9 @@ html {
 
 body {
   margin: 0;
+  &.search {
+    max-width: 100%;
+  }
 }
 h1,
 h2,

@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php get_header(); 
+$title = get_the_title();
+?>
 
 <main class="bg-LP">
 
@@ -74,7 +76,7 @@
       <ul class="flex fS">
         <li><a href="<?php echo esc_url(home_url('/')); ?>">トップ</a></li>
         <li><a href="<?php echo esc_url(home_url('/')); ?>whitepaper/">お役立ち資料</a></li>
-        <li><?php the_title(); ?></li>
+        <li><?php echo esc_html(strip_tags($title)) ?></li>
       </ul>
     </div>
   </section>

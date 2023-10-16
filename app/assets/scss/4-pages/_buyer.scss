@@ -74,7 +74,7 @@
       font-weight: bold;
       text-align: center;
       padding: 100px 0 30px;
-      background-image: url("../img/buyer/img-consult01.png"), url("../img/buyer/img-consult02.png");
+      background-image: url("../img/buyer/img-consult01.webp"), url("../img/buyer/img-consult02.webp");
       background-repeat: no-repeat, no-repeat;
       background-position: left 20% top 50%, right 20% top 50%;
       background-size: contain, contain;
@@ -107,7 +107,7 @@
           margin: auto;
           width: 144px;
           height: 40px;
-          background: url("../img/buyer/img-open.png") 100% 50% / contain no-repeat;
+          background: url("../img/buyer/img-open.webp") 100% 50% / contain no-repeat;
           @media #{$sp} {
             right: 10px;
             width: 134px;
@@ -118,7 +118,7 @@
           &::before {
             width: 96px;
             height: 40px;
-            background: url("../img/buyer/img-close.png") 100% 50% / contain no-repeat;
+            background: url("../img/buyer/img-close.webp") 100% 50% / contain no-repeat;
             @media #{$sp} {
               width: 86px;
               height: 30px;

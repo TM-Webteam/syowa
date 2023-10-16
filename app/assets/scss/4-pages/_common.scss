@@ -682,12 +682,55 @@
       margin: 30px 0;
     }
     li {
-      width: calc(100% / 3 - 10px);
+      width: calc(100% / 3);
+      background: url("../img/common/bg-hexagon.webp") 50% / contain no-repeat;
+      padding: 40px 0;
       @media #{$sp} {
         width: 70%;
         margin: 0 auto;
         &:not(:last-child) {
           margin-bottom: 15px;
+        }
+      }
+      .hexagon {
+        text-align: center;
+        font-weight: bold;
+        &__ttl {
+          display: inline-block;
+          color: #fff;
+          background: #B59853;
+          border-radius: 20px;
+          font-size: 18px;
+          padding: 5px 10px;
+          margin-bottom: 5px;
+          @media #{$sp} {
+            font-size: 14px;
+          }
+        }
+        &__num {
+          span {
+            font-size: 70px;
+            font-family: "DINOT";
+            line-height: 1;
+            @media #{$sp} {
+              font-size: 50px;
+            }
+          }
+          small {
+            font-size: 22px;
+            @media #{$sp} {
+              font-size: 16px;
+            }
+          }
+          &.v1 {
+            color: #6594E0;
+          }
+          &.v2 {
+            color: #5FADD4;
+          }
+          &.v3 {
+            color: #6A80DE;
+          }
         }
       }
     }

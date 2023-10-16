@@ -21,7 +21,7 @@
       <div id="introduction">
         <div class="card">
           <a href="#" class="flex card__box">
-            <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/buyer/img-card.jpg" alt=""></figure>
+            <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/buyer/img-card.webp" alt="物件" loading="lazy" decoding="async" width="138" height="138"></figure>
             <summary class="card__box--details">
               <dl class="flex fS">
                 <dt>物件種別</dt>
@@ -48,7 +48,7 @@
         </div>
         <div class="card">
           <a href="#" class="flex card__box">
-            <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/buyer/img-card.jpg" alt=""></figure>
+            <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/buyer/img-card.webp" alt="物件" loading="lazy" decoding="async" width="138" height="138"></figure>
             <summary class="card__box--details">
               <dl class="flex fS">
                 <dt>物件種別</dt>
@@ -75,7 +75,7 @@
         </div>
         <div class="card">
           <a href="#" class="flex card__box">
-            <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/buyer/img-card.jpg" alt=""></figure>
+            <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/buyer/img-card.webp" alt="物件" loading="lazy" decoding="async" width="138" height="138"></figure>
             <summary class="card__box--details">
               <dl class="flex fS">
                 <dt>物件種別</dt>
@@ -132,11 +132,11 @@
           <h2 class="item__box--ttl"><span class="marker">関東の工場・倉庫</span>など不動産多数</h2>
           <div class="item__box--txt">関東で工場や倉庫のリノベーションを多く手掛けてきた正和工業だからこそ取り扱える、工場や倉庫の物件が多数ございます。<br>またリノベーションに強みを持つからこそわかる各物件の正確な状態や懸念点もお伝えをすることで、安心・適切な物件購入をサポートします。<br><a href="#" class="txt-link">取り扱い物件例はこちら</a></div>
         </summary>
-        <figure class="item__img"><img src="<?php echo assets_path() ?>img/buyer/img-symmetry01.jpg" alt="関東の工場・倉庫など不動産多数" loading="lazy" decoding="async" width="522" height="293"></figure>
+        <figure class="item__img"><img src="<?php echo assets_path() ?>img/buyer/img-symmetry01.webp" alt="関東の工場・倉庫など不動産多数" loading="lazy" decoding="async" width="522" height="293"></figure>
       </div>
 
       <div class="flex aiC item">
-        <figure class="item__img"><img src="<?php echo assets_path() ?>img/buyer/img-symmetry02.jpg" alt="検討時点で諸経費込みの投資費用が算出可能" loading="lazy" decoding="async" width="522" height="293"></figure>
+        <figure class="item__img"><img src="<?php echo assets_path() ?>img/buyer/img-symmetry02.webp" alt="検討時点で諸経費込みの投資費用が算出可能" loading="lazy" decoding="async" width="522" height="293"></figure>
         <summary class="item__box">
           <div class="item__box--point"><span>POINT 02</span></div>
           <h2 class="item__box--ttl">検討時点で諸経費込みの<span class="marker">投資費用が算出可能</span></h2>
@@ -150,7 +150,7 @@
           <h2 class="item__box--ttl">購入後の<span class="marker">リノベーションもサポート</span></h2>
           <div class="item__box--txt">単なる不動産売買だけではなく、物件購入後のお客様のニーズにお応えしたリノベーションもサポートいたします。<br>工程も施工領域も、すべて正和工業の１社で受託できることにより、スムーズかつ低コストなリノベーションを実現いたします。</div>
         </summary>
-        <figure class="item__img"><img src="<?php echo assets_path() ?>img/buyer/img-symmetry03.jpg" alt="購入後のリノベーションもサポート" loading="lazy" decoding="async" width="522" height="293"></figure>
+        <figure class="item__img"><img src="<?php echo assets_path() ?>img/buyer/img-symmetry03.webp" alt="購入後のリノベーションもサポート" loading="lazy" decoding="async" width="522" height="293"></figure>
       </div>
 
       <div class="speech"><span>関東圏の工場・倉庫の物件をお探しならお気軽にご相談ください！</span></div>
@@ -169,22 +169,18 @@
       <div class="flex jcC gap30 card">
 
         <?php
-          $queried_object = get_queried_object();
-          $term_id = esc_html($queried_object->term_id);
           $paged = get_query_var('paged') ? get_query_var('paged') : 1;
           $args = array(
             'posts_per_page' => 3,
             'post_type' => 'column',
             'paged' => $paged,
             'order' => 'DESC',
-            'orderby' => 'post_date',
             'post_status' => 'publish',
             'tax_query'  => array(
-              'relation'  => 'AND',
               array(
                 'taxonomy' => 'column_category',
-                'field' => 'term_id',
-                'terms' => array($term_id),
+                'field' => 'slug',
+                'terms' => 'buyer',
                 'operator' => 'IN',
               ),
             ),
@@ -194,7 +190,7 @@
           ?>
 
           <?php while ($the_query->have_posts()) : $the_query->the_post();
-            $post_id = get_the_ID(5);
+            $post_id = get_the_ID();
             $post_terms = get_the_terms($post_id, 'column_category');
           ?>
 
@@ -225,7 +221,7 @@
     <div class="containers">
       <h2 class="ttl-secondary cW">不動産購入前に読みたいお役立ち資料</h2>
       <div class="flex jcC aiC gap50 desc">
-        <figure class="desc__img"><img src="<?php echo assets_path() ?>img/common/img-wp.png" alt=""></figure>
+        <figure class="desc__img"><img src="<?php echo assets_path() ?>img/common/img-wp.webp" alt=""></figure>
         <summary class="desc__box">
           <h3 class="desc__box--ttl">倉庫・工場はどんな基準で購入すべき？倉庫・工場の購入前に読むべきガイドブック</h3>
           <div class="desc__box--txt">倉庫・工場を購入したい方必見！倉庫・工場をどのような基準で購入すると良いか、基礎知識から押さえるべきポイントまでこの資料1つでまるっと解説しています。ぜひお手に取ってご参考ください。</div>

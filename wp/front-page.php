@@ -21,13 +21,13 @@
       <h2 class="ttl-secondary">売り手と買い手をつなぐサポートを<br class="sp-only">いたします。</h2>
       <div class="flex jcC gap30 card">
         <a href="<?php echo esc_url(home_url('/')); ?>buyer/" class="card__box">
-          <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/top/img-support01.jpg" alt="" loading="lazy" decoding="async" width="470" height="264"></figure>
+          <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/top/img-support01.webp" alt="" loading="lazy" decoding="async" width="470" height="264"></figure>
           <h3 class="card__box--ttl">不動産を<span>買いたい</span>方はこちら</h3>
           <div class="card__box--txt"><span class="marker">関東圏で物件をお探しの経営者様へ。</span><br>工場・倉庫を中心とした取り扱い物件や<br>
             サービス詳細についてはこちらをご覧ください。</div>
         </a>
         <a href="<?php echo esc_url(home_url('/')); ?>seller/" class="card__box">
-          <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/top/img-support02.jpg" alt="" loading="lazy" decoding="async" width="470" height="264"></figure>
+          <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/top/img-support02.webp" alt="" loading="lazy" decoding="async" width="470" height="264"></figure>
           <h3 class="card__box--ttl">不動産を<span>売りたい</span>方はこちら</h3>
           <div class="card__box--txt">お客様の<span class="marker">所有不動産の確実な売却、</span><br>更に<span class="marker">高価売却をするサポート</span>まで！<br>他にはないサービスの詳細はこちらから<br class="sp-only">ご覧ください。</div>
         </a>
@@ -43,7 +43,7 @@
     <div class="containers">
       <h2 class="ttl-secondary cW">事業用不動産に関するお役立ち資料</h2>
       <div class="flex jcC aiC gap50 desc">
-        <figure class="desc__img"><img src="<?php echo assets_path() ?>img/common/img-wp.png" alt=""></figure>
+        <figure class="desc__img"><img src="<?php echo assets_path() ?>img/common/img-wp.webp" alt="" loading="lazy" decoding="async" width="330" height="229"></figure>
         <summary class="desc__box">
           <h3 class="desc__box--ttl">倉庫・工場はどんな基準で購入すべき？倉庫・工場の購入前に読むべきガイドブック</h3>
           <div class="desc__box--txt">倉庫・工場を購入したい方必見！倉庫・工場をどのような基準で購入すると良いか、基礎知識から押さえるべきポイントまでこの資料1つでまるっと解説しています。ぜひお手に取ってご参考ください。</div>

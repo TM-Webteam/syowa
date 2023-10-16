@@ -34,7 +34,7 @@
   <section id="onestop" class="onestop">
     <div class="containers">
       <h2 class="ttl-secondary">「ZEUS INBEST」は事業用不動産の売買からリノベーションまで<br>ワンストップでサポートできる、これまでにない不動産仲介サービスです。</h2>
-      <figure class="onestop__img"><img src="<?php echo assets_path() ?>img/service/img.png" alt="不動産売買仲介" loading="lazy" decoding="async" width="1032" height="199"></figure>
+      <figure class="onestop__img"><img src="<?php echo assets_path() ?>img/service/img.webp" alt="不動産売買仲介" loading="lazy" decoding="async" width="1032" height="199"></figure>
       <div class="lead">総合建設業である正和工業が積み重ねてきた施工実績と、豊富な人材、培った技術力・ノウハウを活かし、<br>お客様の多様化するニーズにお応えできる物件売買の仲介を実現いたします。</div>
     </div>
   </section>
@@ -50,12 +50,12 @@
         <ul class="flex jcC gap30">
           <li class="card__box">
             <h3 class="card__box--ttl">物件仲介からリノベーションまで<br>ワンストップで対応</h3>
-            <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/service/img-merit01.jpg" alt="物件仲介からリノベーションまでワンストップで対応" loading="lazy" decoding="async" width="470" height="264"></figure>
+            <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/service/img-merit01.webp" alt="物件仲介からリノベーションまでワンストップで対応" loading="lazy" decoding="async" width="470" height="264"></figure>
             <div class="card__box--txt">ZEUS INBESTでは物件の仲介はもちろんのこと、<br><span class="marker">リノベーションまでワンストップで対応。</span><br>スムーズかつ理想的な物件購入をサポートします。</div>
           </li>
           <li class="card__box">
             <h3 class="card__box--ttl">検討時点で諸経費込みの投資費用が<br>算出可能</h3>
-            <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/service/img-merit02.jpg" alt="検討時点で諸経費込みの投資費用が算出可能" loading="lazy" decoding="async" width="470" height="264"></figure>
+            <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/service/img-merit02.webp" alt="検討時点で諸経費込みの投資費用が算出可能" loading="lazy" decoding="async" width="470" height="264"></figure>
             <div class="card__box--txt">物件の購入からリノベーションまでワンストップで<br>提供できるので、検討時点で<span class="marker">修繕費・諸経費込みの<br>投資費用を算出することが可能</span>です。</div>
           </li>
         </ul>
@@ -67,12 +67,12 @@
         <ul class="flex jcC gap30">
           <li class="card__box">
             <h3 class="card__box--ttl">確実な売却・高価な売却を実現</h3>
-            <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/service/img-merit03.jpg" alt="確実な売却・高価な売却を実現" loading="lazy" decoding="async" width="470" height="264"></figure>
+            <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/service/img-merit03.webp" alt="確実な売却・高価な売却を実現" loading="lazy" decoding="async" width="470" height="264"></figure>
             <div class="card__box--txt">リノベーション事業で培った豊富なノウハウで、<br><span class="marker">確実な売却を実現。</span>物件価値を高め<br><span class="marker">高価売却をするためのご提案</span>もいたします。</div>
           </li>
           <li class="card__box">
             <h3 class="card__box--ttl">大手企業を中心に多くの買い手顧客を保有</h3>
-            <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/service/img-merit04.jpg" alt="大手企業を中心に多くの買い手顧客を保有" loading="lazy" decoding="async" width="470" height="264"></figure>
+            <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/service/img-merit04.webp" alt="大手企業を中心に多くの買い手顧客を保有" loading="lazy" decoding="async" width="470" height="264"></figure>
             <div class="card__box--txt">大手企業様を中心とした<br>多くの買い手企業様とのネットワークを活かし、<br><span class="marker">企業様同士の仲介を推進</span>いたします。</div>
           </li>
         </ul>

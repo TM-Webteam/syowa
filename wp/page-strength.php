@@ -16,7 +16,7 @@
     <div class="containers">
       <h2 class="ttl-secondary">本質的な課題を解決できる「総合建築会社」<br>それが私たち正和工業です。</h2>
       <div class="flex aiC">
-        <figure class="intro__img"><img src="<?php echo assets_path() ?>img/strength/img-intro01.jpg" alt="本質的な課題を解決できる「総合建築会社」" loading="lazy" decoding="async" width="505" height="285"></figure>
+        <figure class="intro__img"><img src="<?php echo assets_path() ?>img/strength/img-intro01.webp" alt="本質的な課題を解決できる「総合建築会社」" loading="lazy" decoding="async" width="505" height="285"></figure>
         <dl class="intro__box">
           <dd>正和工業は総合建設業として、建築、設備、電気と3本の柱で構成しており、培った技術力・ノウハウを活かすことで、お客様が抱えるさまざまな経営課題を解決へと導きます。</dd>
           <dd>当社はリノベーションを行うだけではなく、その先に見えるお客様の経営資源の有効活用や、お客様が抱えるさまざまな経営課題の解決を第一に考え、ご提案いたします。</dd>
@@ -36,11 +36,11 @@
           <h2 class="item__box--ttl">お客様・社会に寄り添ったリノベーション</h2>
           <div class="item__box--txt">正和工業がすべての工程をワンストップでリノベーションをすることにより、スムーズかつ低コストなリノベーションを実現いたします。<br>また、工事関連車両の削減、高効率・省燃費の建設重機の導入など、施工におけるCO2削減という社会問題の解決にも取り組んでいます。</div>
         </summary>
-        <figure class="item__img"><img src="<?php echo assets_path() ?>img/strength/img-work01.png" alt="お客様・社会に寄り添ったリノベーション" loading="lazy" decoding="async" width="277" height="291"></figure>
+        <figure class="item__img"><img src="<?php echo assets_path() ?>img/strength/img-work01.webp" alt="お客様・社会に寄り添ったリノベーション" loading="lazy" decoding="async" width="277" height="291"></figure>
       </div>
 
       <div class="flex aiC item">
-        <figure class="item__img"><img src="<?php echo assets_path() ?>img/strength/img-work02.png" alt="正和工業ならではの提案力" loading="lazy" decoding="async" width="277" height="291"></figure>
+        <figure class="item__img"><img src="<?php echo assets_path() ?>img/strength/img-work02.webp" alt="正和工業ならではの提案力" loading="lazy" decoding="async" width="277" height="291"></figure>
         <summary class="item__box">
           <div class="item__box--num">02</div>
           <h2 class="item__box--ttl">正和工業ならではの提案力</h2>
@@ -55,7 +55,7 @@
           <div class="item__box--txt">確かな技術力と経験で多くのお客様より選ばれ、2万件以上もの実績がございます。<br>特に設備事業は創業時からの本業と自負しており、官公庁からも一定の評価をいただいております。</div>
           <a href="https://www.showa-kougyo.co.jp/works/" target="_blank" rel="noopener noreferrer" class="more">正和工業の実績紹介はこちら</a>
         </summary>
-        <figure class="item__img"><img src="<?php echo assets_path() ?>img/strength/img-work03.png" alt="総合建設業で積み重ねた豊富な実績" loading="lazy" decoding="async" width="277" height="291"></figure>
+        <figure class="item__img"><img src="<?php echo assets_path() ?>img/strength/img-work03.webp" alt="総合建設業で積み重ねた豊富な実績" loading="lazy" decoding="async" width="277" height="291"></figure>
       </div>
       
     </div>
