@@ -73,7 +73,7 @@
     <div class="containers">
       <ul class="flex fS">
         <li><a href="<?php echo esc_url(home_url('/')); ?>">トップ</a></li>
-        <li><a href="<?php echo esc_url(home_url('/')); ?>catalog/">お役立ち資料</a></li>
+        <li><a href="<?php echo esc_url(home_url('/')); ?>catalog/">サービス資料</a></li>
         <li><?php the_title(); ?></li>
       </ul>
     </div>

@@ -63,6 +63,8 @@
 
   <?php get_template_part( 'template-parts/info' ); ?>
 
+  <?php get_template_part( 'template-parts/inquiry' ); ?>
+
   <section class="breadcrumb">
     <div class="containers">
       <ul class="flex fS">
@@ -71,8 +73,6 @@
       </ul>
     </div>
   </section>
-
-  <?php get_template_part( 'template-parts/inquiry' ); ?>
 
 </main>
 

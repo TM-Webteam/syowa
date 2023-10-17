@@ -14,7 +14,7 @@
         </ul>
         <div class="ctabtn">
           <div class="balloon"><span class="balloon__txt">製品の特長や料金が3分で分かる！</span></div>
-          <a href="<?php echo esc_url(home_url('/')); ?>catalog/" class="more bgP thumb">サービス資料ダウンロード</a>
+          <a href="<?php echo esc_url(home_url('/')); ?>catalog/" class="more bgP">サービス資料ダウンロード</a>
         </div>
       </div>
     </div>
@@ -85,6 +85,8 @@
 
   <?php get_template_part( 'template-parts/forte' ); ?>
 
+  <?php get_template_part( 'template-parts/inquiry' ); ?>
+
   <section class="breadcrumb">
     <div class="containers">
       <ul class="flex fS">
@@ -93,8 +95,6 @@
       </ul>
     </div>
   </section>
-
-  <?php get_template_part( 'template-parts/inquiry' ); ?>
 
 </main>
 

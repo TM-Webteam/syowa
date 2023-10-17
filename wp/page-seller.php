@@ -110,7 +110,7 @@
         <?php endif; ?>
 
       </div>
-      <a href="<?php echo esc_url(home_url('/')); ?>column/" class="more">お役立ちコラム一覧を見る</a>
+      <a href="<?php echo esc_url(home_url('/')); ?>column/category/seller/" class="more">お役立ちコラム一覧を見る</a>
     </div>
   </section>
 
@@ -125,15 +125,6 @@
           <a href="<?php echo esc_url(home_url('/')); ?>whitepaper/" class="more bgP">お役立ち資料をダウンロード</a>
         </summary>
       </div>
-    </div>
-  </section>
-
-  <section class="breadcrumb">
-    <div class="containers">
-      <ul class="flex fS">
-        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">トップ</a></li>
-        <li>不動産を売りたい企業様</li>
-      </ul>
     </div>
   </section>
 
@@ -152,6 +143,15 @@
           <a href="<?php echo esc_url(home_url('/')); ?>whitepaper/" class="more cW tiny"><span>お役立ち資料</span></a>
         </div>
       </summary>
+    </div>
+  </section>
+
+  <section class="breadcrumb">
+    <div class="containers">
+      <ul class="flex fS">
+        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">トップ</a></li>
+        <li>不動産を売りたい企業様</li>
+      </ul>
     </div>
   </section>
 
