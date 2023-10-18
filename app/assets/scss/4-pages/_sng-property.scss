@@ -1,0 +1,101 @@
+/*
+  ----------------
+  sng-property
+  ----------------
+*/
+
+.sng-property {
+
+  .tag-list {
+    margin-bottom: 11px;
+    .tag {
+      display: inline;
+      font-size: 14px;
+      color: #003D7E;
+      border: 1px solid #003D7E;
+      border-radius: 5px;
+      padding: 5px 15px;
+      background: #fff;
+      margin-right: 7px;
+      @media #{$sp} {
+        font-size: 12px;
+      }
+    }
+  }
+
+  button.copy {
+    background: url("../img/property/ico_copy.svg") 50% / contain no-repeat;
+    width: 16px;
+    height: 19px;
+    overflow: hidden;
+    margin-left: 10px;
+  }
+
+  .article__desc {
+    margin-bottom: 30px;
+  }
+
+  .wp-slick {
+    margin-bottom: 11px;
+  }
+
+  .notes {
+    font-size: 14px;
+  }
+
+  .article__table {
+    margin-top: 40px;
+    .ttl-tertiary {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      background: #002A54;
+      padding: 8px;
+      margin: 0;
+      @media #{$sp} {
+        font-size: 14px;
+      }
+    }
+    .property-table {
+      border: 1px solid #B8C3D0;
+      font-size: 16px;
+      @media #{$sp} {
+        font-size: 14px;
+      }
+      tr {
+        border-bottom: 1px solid #B8C3D0;
+        &:last-child {
+          border: none;
+        }
+        @media #{$sp} {
+          display: grid;
+        }
+        th {
+          color: #002A54;
+          background: #E0E5EB;
+          padding: 6px;
+          width: 170px;
+          font-weight: 700;
+          @media #{$sp} {
+            width: auto;
+          }
+        }
+        td {
+          padding: 6px 17px;
+          @media #{$sp} {
+            &.property-table__td--border {
+              border-bottom: 1px solid #B8C3D0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .side-bnr {
+    margin-top: 30px;
+  }
+
+
+
+}
