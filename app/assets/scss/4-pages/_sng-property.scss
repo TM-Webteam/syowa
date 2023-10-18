@@ -9,8 +9,9 @@
   .tag-list {
     margin-bottom: 11px;
     .tag {
-      display: inline;
+      display: inline-block;
       font-size: 14px;
+      line-height: 1;
       color: #003D7E;
       border: 1px solid #003D7E;
       border-radius: 5px;
