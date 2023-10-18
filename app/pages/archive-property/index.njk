@@ -30,55 +30,291 @@
     </div>
   </section>
 
-  <figure class="card__img"><img src="/assets/img/property/bnr_contact_02.webp" alt=""></figure>
+  <div class="bnr"><figure class="bnr__img"><a href="#"><img src="/assets/img/property/bnr_contact_02.webp" alt=""></a></figure></div>
 
-  <section class="catalog-menu">
+  <section class="property-search">
     <div class="containers">
-
-      <a href="#" class="flex aiC card">
-        <figure class="card__img"><img src="/assets/img/whitepaper/img-card01.jpg" alt=""></figure>
-        <summary class="card__box">
-          <h2 class="card__box--ttl">資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入り資料タイトルが入り</h2>
-          <h3 class="card__box--txt">リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</h3>
-          <div class="more">資料をダウンロード</div>
-        </summary>
-      </a>
-
-      <a href="#" class="flex aiC card">
-        <figure class="card__img"><img src="/assets/img/whitepaper/img-card01.jpg" alt=""></figure>
-        <summary class="card__box">
-          <h2 class="card__box--ttl">資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入り資料タイトルが入り</h2>
-          <h3 class="card__box--txt">リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</h3>
-          <div class="more">資料をダウンロード</div>
-        </summary>
-      </a>
-
-      <a href="#" class="flex aiC card">
-        <figure class="card__img"><img src="/assets/img/whitepaper/img-card01.jpg" alt=""></figure>
-        <summary class="card__box">
-          <h2 class="card__box--ttl">資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入り資料タイトルが入り</h2>
-          <h3 class="card__box--txt">リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</h3>
-          <div class="more">資料をダウンロード</div>
-        </summary>
-      </a>
-
-      <a href="#" class="flex aiC card">
-        <figure class="card__img"><img src="/assets/img/whitepaper/img-card01.jpg" alt=""></figure>
-        <summary class="card__box">
-          <h2 class="card__box--ttl">資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入ります。資料タイトルが入り資料タイトルが入り</h2>
-          <h3 class="card__box--txt">リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。リード文が入ります。</h3>
-          <div class="more">資料をダウンロード</div>
-        </summary>
-      </a>
-      
+      <h2 class="ttl-secondary">物件検索（絞り込み条件）</h2>
+      <table class="property-search-table">
+        <tr>
+          <th>エリア</th>
+          <td>
+            <ul class="property-search-list">
+              <li><div class="flex fS aiC"><input type="checkbox">東京</div></li>
+              <li><div class="flex fS aiC"><input type="checkbox">千葉</div></li>
+              <li><div class="flex fS aiC"><input type="checkbox">埼玉</div></li>
+              <li><div class="flex fS aiC"><input type="checkbox">栃木</div></li>
+              <li><div class="flex fS aiC"><input type="checkbox">群馬</div></li>
+              <li><div class="flex fS aiC"><input type="checkbox">茨城</div></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>物件種別</th>
+          <td>
+            <ul class="property-search-list">
+              <li><div class="flex fS aiC"><input type="checkbox">土地</div></li>
+              <li><div class="flex fS aiC"><input type="checkbox">倉庫</div></li>
+              <li><div class="flex fS aiC"><input type="checkbox">工場</div></li>
+              <li><div class="flex fS aiC"><input type="checkbox">店舗</div></li>
+              <li><div class="flex fS aiC"><input type="checkbox">ビル</div></li>
+              <li><div class="flex fS aiC"><input type="checkbox">事務所</div></li>
+              <li><div class="flex fS aiC"><input type="checkbox">その他</div></li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+      <a href="/contact/" class="more bgP">絞り込みをする</a>
     </div>
   </section>
+
+
+  <section class="property-result">
+    <div class="containers">
+
+      <div class="property-control">
+        <div class="control-sort">
+          <div class="control-text">並び替え：</div>
+          <select class="control-select">
+            <option>おすすめ順</option>
+          </select>
+        </div>
+
+        <div class="control-btn">
+          <div class="control-text">表示方法：</div>
+          <ul class="control-btn-list">
+            <li class="btn btn-card current"></li>
+            <li class="btn btn-image"></li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="#" class="card">
+        <summary class="card__box">
+          <h2 class="card__box--ttl">物件名
+            <ul class="tag-list">
+              <li class="tag">エリア</li>
+              <li class="tag">物件種別</li>
+            </ul>
+          </h2>
+          <div class="card__box--item">
+            <figure class="card__img"><img src="/assets/img/property/img_dummy.webp" alt=""></figure>
+            <table class="card__table">
+              <tr>
+                <th>所在地</th>
+                <td>情報が入ります</td>
+              </tr>
+              <tr>
+                <th>交通</th>
+                <td>情報が入ります</td>
+              </tr>
+              <tr>
+                <th>建物面積</th>
+                <td>情報が入ります</td>
+              </tr>
+              <tr>
+                <th>価格</th>
+                <td>情報が入ります</td>
+              </tr>
+            </table>
+          </div>
+          <div class="detail">物件の詳細を見る</div>
+        </summary>
+      </a>
+
+      <a href="#" class="flex aiC card">
+        <summary class="card__box">
+          <h2 class="card__box--ttl">物件名
+            <ul class="tag-list">
+              <li class="tag">エリア</li>
+              <li class="tag">物件種別</li>
+            </ul>
+          </h2>
+          <div class="card__box--item">
+            <figure class="card__img"><img src="/assets/img/property/img_dummy.webp" alt=""></figure>
+            <table class="card__table">
+              <tr>
+                <th>所在地</th>
+                <td>情報が入ります</td>
+              </tr>
+              <tr>
+                <th>交通</th>
+                <td>情報が入ります</td>
+              </tr>
+              <tr>
+                <th>建物面積</th>
+                <td>情報が入ります</td>
+              </tr>
+              <tr>
+                <th>価格</th>
+                <td>情報が入ります</td>
+              </tr>
+            </table>
+          </div>
+          <div class="detail">物件の詳細を見る</div>
+        </summary>
+      </a>
+
+      <a href="#" class="flex aiC card">
+        <summary class="card__box">
+          <h2 class="card__box--ttl">物件名
+            <ul class="tag-list">
+              <li class="tag">エリア</li>
+              <li class="tag">物件種別</li>
+            </ul>
+          </h2>
+          <div class="card__box--item">
+            <figure class="card__img"><img src="/assets/img/property/img_dummy.webp" alt=""></figure>
+            <table class="card__table">
+              <tr>
+                <th>所在地</th>
+                <td>情報が入ります</td>
+              </tr>
+              <tr>
+                <th>交通</th>
+                <td>情報が入ります</td>
+              </tr>
+              <tr>
+                <th>建物面積</th>
+                <td>情報が入ります</td>
+              </tr>
+              <tr>
+                <th>価格</th>
+                <td>情報が入ります</td>
+              </tr>
+            </table>
+          </div>
+          <div class="detail">物件の詳細を見る</div>
+        </summary>
+      </a>
+
+      <a href="#" class="flex aiC card">
+        <summary class="card__box">
+          <h2 class="card__box--ttl">物件名
+            <ul class="tag-list">
+              <li class="tag">エリア</li>
+              <li class="tag">物件種別</li>
+            </ul>
+          </h2>
+          <div class="card__box--item">
+            <figure class="card__img"><img src="/assets/img/property/img_dummy.webp" alt=""></figure>
+            <table class="card__table">
+              <tr>
+                <th>所在地</th>
+                <td>情報が入ります</td>
+              </tr>
+              <tr>
+                <th>交通</th>
+                <td>情報が入ります</td>
+              </tr>
+              <tr>
+                <th>建物面積</th>
+                <td>情報が入ります</td>
+              </tr>
+              <tr>
+                <th>価格</th>
+                <td>情報が入ります</td>
+              </tr>
+            </table>
+          </div>
+          <div class="detail">物件の詳細を見る</div>
+        </summary>
+      </a>
+
+      <a href="#" class="flex aiC card">
+        <summary class="card__box">
+          <h2 class="card__box--ttl">物件名
+            <ul class="tag-list">
+              <li class="tag">エリア</li>
+              <li class="tag">物件種別</li>
+            </ul>
+          </h2>
+          <div class="card__box--item">
+            <figure class="card__img"><img src="/assets/img/property/img_dummy.webp" alt=""></figure>
+            <table class="card__table">
+              <tr>
+                <th>所在地</th>
+                <td>情報が入ります</td>
+              </tr>
+              <tr>
+                <th>交通</th>
+                <td>情報が入ります</td>
+              </tr>
+              <tr>
+                <th>建物面積</th>
+                <td>情報が入ります</td>
+              </tr>
+              <tr>
+                <th>価格</th>
+                <td>情報が入ります</td>
+              </tr>
+            </table>
+          </div>
+          <div class="detail">物件の詳細を見る</div>
+        </summary>
+      </a>
+
+      <a href="#" class="flex aiC card">
+        <summary class="card__box">
+          <h2 class="card__box--ttl">物件名物件名物件名物件名物件名物件名物件名物件名物件名物件名物件名物件名物件名物件名物件名物件名
+            <ul class="tag-list">
+              <li class="tag">エリア</li>
+              <li class="tag">物件種別</li>
+            </ul>
+          </h2>
+          <div class="card__box--item">
+            <figure class="card__img"><img src="/assets/img/property/img_dummy.webp" alt=""></figure>
+            <table class="card__table">
+              <tr>
+                <th>所在地</th>
+                <td>情報が入ります</td>
+              </tr>
+              <tr>
+                <th>交通</th>
+                <td>情報が入ります</td>
+              </tr>
+              <tr>
+                <th>建物面積</th>
+                <td>情報が入ります</td>
+              </tr>
+              <tr>
+                <th>価格</th>
+                <td>情報が入ります</td>
+              </tr>
+            </table>
+          </div>
+          <div class="detail">物件の詳細を見る</div>
+        </summary>
+      </a>
+
+      <nav class="pagination">
+        <div class="nav-links">
+          <a class="prev page-numbers" href="#"><span></span></a>
+          <a class="page-numbers" href="#">1</a>
+          <span class="page-numbers current">2</span>
+          <a class="page-numbers" href="#">3</a>
+          <a class="page-numbers" href="#">4</a>
+          <a class="page-numbers" href="#">5</a>
+          <a class="next page-numbers" href="#"><span></span></a>
+        </div>
+      </nav>
+
+    </div>
+  </section>
+
+  <div class="floating-bnr sp-only">
+    <div class="floating-text"><strong>未公開物件</strong>をお探しの方はこちらからお問合せください</div>
+    <ul class="floating-link">
+      <li><a href="#" class="contact">お問合せ</a></li>
+      <li><a href="tel:0120971170" class="tel">0120-971-170</a></li>
+    </ul>
+  </div>
 
   <section class="breadcrumb">
     <div class="containers">
       <ul class="flex fS">
         <li><a href="/">トップ</a></li>
-        <li>お役立ち資料一覧</li>
+        <li>物件一覧</li>
       </ul>
     </div>
   </section>
