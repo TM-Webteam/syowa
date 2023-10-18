@@ -213,7 +213,7 @@
         <?php endif; ?>
 
       </div>
-      <a href="<?php echo esc_url(home_url('/')); ?>column/" class="more">お役立ちコラム一覧を見る</a>
+      <a href="<?php echo esc_url(home_url('/')); ?>column/category/buyer/" class="more">お役立ちコラム一覧を見る</a>
     </div>
   </section>
 
@@ -231,6 +231,8 @@
     </div>
   </section>
 
+  <?php get_template_part( 'template-parts/inquiry' ); ?>
+
   <section class="breadcrumb">
     <div class="containers">
       <ul class="flex fS">
@@ -239,8 +241,6 @@
       </ul>
     </div>
   </section>
-
-  <?php get_template_part( 'template-parts/inquiry' ); ?>
 
 </main>
 

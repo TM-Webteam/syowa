@@ -1,7 +1,7 @@
 <section class="about">
   <div class="containers">
     <h2 class="ttl-secondary cW">正和工業とは</h2>
-    <div class="lead cW">正和工業は1968年の創業より、数多くの施工実績や、国際標準化機構などの認証、<br>技術力向上のための資格取得を積み重ねてきました。</div>
+    <div class="lead cW">正和工業は1963年の創業より、数多くの施工実績や、国際標準化機構などの認証、<br>技術力向上のための資格取得を積み重ねてきました。</div>
     <ul id="hexagon" class="flex aiC">
       <li class="core">
         <div class="hexagon">

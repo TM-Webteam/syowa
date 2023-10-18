@@ -709,8 +709,10 @@
         }
         &__num {
           span {
-            font-size: 70px;
-            font-family: "DINOT";
+            font-size: 64px;
+            font-family: "din-2014", sans-serif;
+            font-weight: 700;
+            font-style: normal;
             line-height: 1;
             @media #{$sp} {
               font-size: 50px;

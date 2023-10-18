@@ -66,8 +66,8 @@
   </div>
 
   <div class="sticky">
-    <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/" class="bnr-contact"><img src="<?php echo assets_path() ?>img/common/bnr-contact.webp" alt=""></a>
-    <a href="<?php echo esc_url( home_url( '/' ) ); ?>catalog/1/" class="bnr-catalog"><img src="<?php echo assets_path() ?>img/common/bnr-catalog.webp" alt=""></a>
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/" class="bnr-contact"><img src="<?php echo assets_path() ?>img/common/bnr-contact.webp" alt="" loading="lazy" decoding="async" width="300" height="107"></a>
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>whitepaper/test/" class="bnr-catalog"><img src="<?php echo assets_path() ?>img/common/bnr-catalog.webp" alt="" loading="lazy" decoding="async" width="300" height="339"></a>
   </div>
 
 </aside>
