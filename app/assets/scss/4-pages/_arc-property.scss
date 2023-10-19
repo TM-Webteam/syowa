@@ -19,6 +19,7 @@
       margin: 0 auto;
       @media #{$sp} {
         width: auto;
+        padding: 0 30px;
       }
     }
   }
@@ -35,7 +36,7 @@
       margin: 0;
       @media #{$sp} {
         text-align: left;
-        padding: 27px 31px;
+        padding: 13px 15px;
         font-size: 16px;
       }
     }
@@ -94,13 +95,13 @@
         margin-right: 0;
       }
       @media #{$sp} {
-      margin: 0;
-      padding: 12px 0;
-      border-bottom: 1px solid #CCCCCC;
-      width: 100%;
-      &:last-child {
-        border-bottom: none;
-      }
+        margin: 0;
+        padding: 12px 0;
+        border-bottom: 1px solid #CCCCCC;
+        width: 100%;
+        &:last-child {
+          border-bottom: none;
+        }
       }
     }
   }
@@ -152,11 +153,10 @@
               border: 1px solid #000;
               &.btn-card {
                 background: #000 url(../img/property/card_w.svg) 50%/auto no-repeat;
-            }
+              }
               &.btn-image {
                 background: #000 url(../img/property/image_w.svg) 50%/auto no-repeat;
-            }
-
+              }
             }
           }
         }
@@ -171,6 +171,9 @@
         position: relative;
         background: #fff;
         padding: 40px;
+        @media #{$sp} {
+          padding: 20px;
+        }
         .card__box--ttl {
           font-size: 20px;
           font-weight: 700;
@@ -263,87 +266,128 @@
   }
 
   .floating-bnr {
-    background:rgba(0,0,0,0.5);
+    background:rgba(0,0,0,0.7);
     padding: 15px;
     position: fixed;
+    z-index: 10;
     bottom: 0;
     width: 100%;
-    text-align: center;
-    .floating-text {
-      position: relative;
-      display: inline-block;
-      padding: 0 10px 5px;
-      margin: 0 auto 15px;
-      font-size: 13px;
-      line-height: 1;
-      color: #fff;
-      &:before {
-        position: absolute;
-        left: 0;
-        top: 0;
-        content: "";
-        width: 1px;
-        height: 13px;
-        background: #fff;
-        border-radius: 3px;
-        transform: rotate(-15deg);
-      }
-      &:after {
-        position: absolute;
-        content: "";
-        right: 0;
-        top: 0;
-        width: 1px;
-        height: 13px;
-        background: #fff;
-        border-radius: 3px;
-        transform: rotate(15deg);
-      }
-    }
-    .floating-link {
+    .containers {
+      padding: 0;
+      margin: 0 auto;
+      text-align: center;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 16px;
-      li {
-        display: block;
-        text-align: center;
+      align-items: center;
+      gap: 10px 10px;
+      grid-template-columns: 1fr 160px 160px;
+      grid-template-rows: auto;
+      grid-template-areas: 
+        "text contact tel"; 
+      @media #{$pc} {
+        width: 810px;
       }
-      a {
-        display: block;
-        padding: 14px 5px;
-        font-size: 14px;
-        line-height: 1.3;
-        position: relative;
-        &.contact {
-          background: #FF5A57;
+      @media #{$sp} {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+          "text text"
+          "contact tel"; 
+      }
+      .floating-bnr__text {
+        grid-area: text;
+        color: #fff;
+        font-size: 16px;
+        a {
+          text-decoration: underline;
+        }
+        @media #{$sp} {
+          position: relative;
+          display: inline-block;
+          padding: 0 10px 5px;
+          margin: 0 auto 0;
+          font-size: 13px;
+          line-height: 1;
           color: #fff;
-          font-weight: 700;
-          &::before {
-            content: "";
+          &:before {
             position: absolute;
-            background: url(../img/property/balloon_w.svg) 50%/contain no-repeat;
-            margin: 3px 0 0 -20px;
-            left: auto;
-            width: 14px;
+            left: 0;
+            top: 0;
+            content: "";
+            width: 1px;
             height: 13px;
+            background: #fff;
+            border-radius: 3px;
+            transform: rotate(-15deg);
+          }
+          &:after {
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 0;
+            width: 1px;
+            height: 13px;
+            background: #fff;
+            border-radius: 3px;
+            transform: rotate(15deg);
           }
         }
-        &.tel {
-          background: #6E97E5;
-          color: #fff;
-          font-weight: 700;
-          &::before {
-            background: url(../img/property/tell_w.svg) 50%/contain no-repeat;
-            margin: 3px 0 0 -16px;
-            left: auto;
-            top: auto;
-            bottom: auto;
+      }
+      .floating-bnr__link--contact {
+        grid-area: contact;
+        display: block;
+        text-align: center;
+        a {
+          display: block;
+          padding: 14px 5px 14px 20px;
+          font-size: 14px;
+          line-height: 1.3;
+          position: relative;
+          &.contact {
+            background: #FF5A57;
+            color: #fff;
+            font-weight: 700;
+            &::before {
+              content: "";
+              position: absolute;
+              background: url(../img/property/balloon_w.svg) 50%/contain no-repeat;
+              margin: 3px 0 0 -20px;
+              left: auto;
+              width: 14px;
+              height: 13px;
+              }
+            }
+          }
+        }
+      .floating-bnr__link--tel {
+        grid-area: tel;
+        display: block;
+        text-align: center;
+        a {
+          display: block;
+          padding: 14px 5px 14px 20px;
+          font-size: 14px;
+          line-height: 1.3;
+          position: relative;
+          &.tel {
+            background: #6E97E5;
+            color: #fff;
+            font-weight: 700;
+            &::before {
+              background: url(../img/property/tell_w.svg) 50%/contain no-repeat;
+              margin: 3px 0 0 -16px;
+              left: auto;
+              top: auto;
+              bottom: auto;
+              @media #{$pc} {
+                width: 12px;
+                height: 16px;
+              }
+            }
           }
         }
       }
     }
   }
-
 }
 
 
