@@ -36,19 +36,20 @@ function remove_menus()
 }
 add_action('admin_menu', 'remove_menus');
 
-add_action('init', function() {
+add_action('init', function () {
   remove_filter('the_excerpt', 'wpautop');
   remove_filter('the_content', 'wpautop');
-  });
+});
 
 
 //----------------------------------------------
 // WP ヘッダーに挿入されるCSSを削除
 //----------------------------------------------
-add_action( 'wp_enqueue_scripts', 'remove_block_library_style' );
-function remove_block_library_style() {
-  wp_dequeue_style( 'wp-block-library' );//style.min.cssの削除
-  wp_dequeue_style( 'wp-block-library-theme' ); //theme.min.cssの削除
+add_action('wp_enqueue_scripts', 'remove_block_library_style');
+function remove_block_library_style()
+{
+  wp_dequeue_style('wp-block-library'); //style.min.cssの削除
+  wp_dequeue_style('wp-block-library-theme'); //theme.min.cssの削除
 }
 
 
@@ -109,12 +110,12 @@ function my_page_templates($templates)
 }
 
 $allowed_html = array(
-    'a' => array(
-        'href' => array (),
-        'target' => array()
-    ),
-    'br' => array(),
-    'p' => array(),
+  'a' => array(
+    'href' => array(),
+    'target' => array()
+  ),
+  'br' => array(),
+  'p' => array(),
 );
 
 
@@ -194,3 +195,11 @@ function setPostViews($postID)
 }
 remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 
+function form_post()
+{
+  if (isset($_POST)) {
+    $form_post = $_POST;
+    print_r($form_post);
+  }
+}
+add_shortcode('sc_form_post', 'form_post');

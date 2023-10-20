@@ -18,90 +18,132 @@
   <section class="introduction">
     <div class="containers">
       <h2 class="ttl-secondary"><span class="marker">関東の工場・倉庫</span>を中心に取り扱い！物件紹介</h2>
-      <div id="introduction">
-        <div class="card">
-          <a href="#" class="flex card__box">
-            <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/buyer/img-card.webp" alt="物件" loading="lazy" decoding="async" width="138" height="138"></figure>
-            <summary class="card__box--details">
-              <dl class="flex fS">
-                <dt>物件種別</dt>
-                <dd>倉庫</dd>
-              </dl>
-              <dl class="flex fS">
-                <dt>所在地積</dt>
-                <dd>東京都●市●●町●丁目</dd>
-              </dl>
-              <dl class="flex fS">
-                <dt>交通</dt>
-                <dd>●●線●●駅 徒歩●●分</dd>
-              </dl>
-              <dl class="flex fS">
-                <dt>建物面積</dt>
-                <dd>●●㎡</dd>
-              </dl>
-              <dl class="flex fS">
-                <dt>土地面積</dt>
-                <dd>●●㎡</dd>
-              </dl>
-            </summary>
-          </a>
+      <?php
+      $args = array(
+        'post_type' => 'property',
+        'posts_per_page' => -1,
+        'order' => 'DESC',
+        'orderby' => 'post_date',
+        'meta_key' => 'lp_view_flg',
+        'meta_value' => '1',
+        // 'post__not_in' => $p_id,
+      );
+      $my_query = new WP_Query($args);
+      if ($my_query->have_posts()) :
+      ?>
+        <div id="introduction">
+          <?php
+          while ($my_query->have_posts()) : $my_query->the_post();
+            $post_id = get_the_ID();
+            $lead = get_post_meta($post_id, "lead", true);
+            $address = get_post_meta($post_id, "address", true);
+            $access = get_post_meta($post_id, "access", true);
+            $building_area = get_post_meta($post_id, "building_area", true);
+            $price = get_post_meta($post_id, "price", true);
+            $area_terms = get_the_terms($post_id, 'property_area');
+            $kind_terms = get_the_terms($post_id, 'property_kind');
+          ?>
+            <div class="card">
+              <a href="<?php the_permalink(); ?>" class="flex card__box">
+                <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/buyer/img-card.webp" alt="物件" loading="lazy" decoding="async" width="138" height="138"></figure>
+
+                <figure class="card__box--img"><?php the_post_thumbnail(); ?></figure>
+
+
+                <summary class="card__box--details">
+                  <dl class="flex fS">
+                    <dt>物件種別</dt>
+                    <?php if ($kind_terms) : ?>
+                      <?php foreach ($kind_terms as $kind_term) : ?>
+                        <dd><?php echo esc_html($kind_term->name); ?></dd>
+                      <?php endforeach; ?>
+                    <?php endif; ?>
+                  </dl>
+                  <?php if (!empty($address)) : ?>
+                    <dl class="flex fS">
+                      <dt>所在地</dt>
+                      <dd><?php echo wp_kses($address, $allowed_html); ?></dd>
+                    </dl>
+                  <?php endif; ?>
+                  <?php if (!empty($access)) : ?>
+                    <dl class="flex fS">
+                      <dt>交通</dt>
+                      <dd><?php echo wp_kses($access, $allowed_html); ?></dd>
+                    </dl>
+                  <?php endif; ?>
+                  <?php if (!empty($building_area)) : ?>
+                    <dl class="flex fS">
+                      <dt>建物面積</dt>
+                      <dd><?php echo wp_kses($building_area, $allowed_html); ?></dd>
+                    </dl>
+                  <?php endif; ?>
+                  <?php if (!empty($price)) : ?>
+                    <dl class="flex fS">
+                      <dt>価格</dt>
+                      <dd><?php echo wp_kses($price, $allowed_html); ?></dd>
+                    </dl>
+                  <?php endif; ?>
+                </summary>
+              </a>
+            </div>
+          <?php endwhile; ?>
+          <!-- <div class="card">
+            <a href="#" class="flex card__box">
+              <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/buyer/img-card.webp" alt="物件" loading="lazy" decoding="async" width="138" height="138"></figure>
+              <summary class="card__box--details">
+                <dl class="flex fS">
+                  <dt>物件種別</dt>
+                  <dd>工場</dd>
+                </dl>
+                <dl class="flex fS">
+                  <dt>所在地積</dt>
+                  <dd>東京都●●市●●町●丁目　マンション●号棟　501</dd>
+                </dl>
+                <dl class="flex fS">
+                  <dt>交通</dt>
+                  <dd>●●線●●駅 徒歩●●分<br>●●線●●駅 徒歩●●分</dd>
+                </dl>
+                <dl class="flex fS">
+                  <dt>建物面積</dt>
+                  <dd>●●㎡</dd>
+                </dl>
+                <dl class="flex fS">
+                  <dt>土地面積</dt>
+                  <dd>●●㎡</dd>
+                </dl>
+              </summary>
+            </a>
+          </div>
+          <div class="card">
+            <a href="#" class="flex card__box">
+              <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/buyer/img-card.webp" alt="物件" loading="lazy" decoding="async" width="138" height="138"></figure>
+              <summary class="card__box--details">
+                <dl class="flex fS">
+                  <dt>物件種別</dt>
+                  <dd>工場</dd>
+                </dl>
+                <dl class="flex fS">
+                  <dt>所在地積</dt>
+                  <dd>東京都●●市●●町●丁目　マンション●号棟　501</dd>
+                </dl>
+                <dl class="flex fS">
+                  <dt>交通</dt>
+                  <dd>●●線●●駅 徒歩●●分<br>●●線●●駅 徒歩●●分</dd>
+                </dl>
+                <dl class="flex fS">
+                  <dt>建物面積</dt>
+                  <dd>●●㎡</dd>
+                </dl>
+                <dl class="flex fS">
+                  <dt>土地面積</dt>
+                  <dd>●●㎡</dd>
+                </dl>
+              </summary>
+            </a>
+          </div> -->
         </div>
-        <div class="card">
-          <a href="#" class="flex card__box">
-            <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/buyer/img-card.webp" alt="物件" loading="lazy" decoding="async" width="138" height="138"></figure>
-            <summary class="card__box--details">
-              <dl class="flex fS">
-                <dt>物件種別</dt>
-                <dd>工場</dd>
-              </dl>
-              <dl class="flex fS">
-                <dt>所在地積</dt>
-                <dd>東京都●●市●●町●丁目　マンション●号棟　501</dd>
-              </dl>
-              <dl class="flex fS">
-                <dt>交通</dt>
-                <dd>●●線●●駅 徒歩●●分<br>●●線●●駅 徒歩●●分</dd>
-              </dl>
-              <dl class="flex fS">
-                <dt>建物面積</dt>
-                <dd>●●㎡</dd>
-              </dl>
-              <dl class="flex fS">
-                <dt>土地面積</dt>
-                <dd>●●㎡</dd>
-              </dl>
-            </summary>
-          </a>
-        </div>
-        <div class="card">
-          <a href="#" class="flex card__box">
-            <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/buyer/img-card.webp" alt="物件" loading="lazy" decoding="async" width="138" height="138"></figure>
-            <summary class="card__box--details">
-              <dl class="flex fS">
-                <dt>物件種別</dt>
-                <dd>工場</dd>
-              </dl>
-              <dl class="flex fS">
-                <dt>所在地積</dt>
-                <dd>東京都●●市●●町●丁目　マンション●号棟　501</dd>
-              </dl>
-              <dl class="flex fS">
-                <dt>交通</dt>
-                <dd>●●線●●駅 徒歩●●分<br>●●線●●駅 徒歩●●分</dd>
-              </dl>
-              <dl class="flex fS">
-                <dt>建物面積</dt>
-                <dd>●●㎡</dd>
-              </dl>
-              <dl class="flex fS">
-                <dt>土地面積</dt>
-                <dd>●●㎡</dd>
-              </dl>
-            </summary>
-          </a>
-        </div>
-      </div>
-      <a href="#" class="more">取り扱い物件一覧はこちら</a>
+      <?php endif; ?>
+      <a href="<?php echo esc_url(home_url('/')); ?>property/" class="more">取り扱い物件一覧はこちら</a>
     </div>
   </section>
 
@@ -113,7 +155,9 @@
         <dd class="consult__box--form mkto">
           <script src="//lp.ndsoft.jp/js/forms2/js/forms2.min.js"></script>
           <form id="mktoForm_4263"></form>
-          <script>MktoForms2.loadForm("//lp.ndsoft.jp", "524-EUC-041", 4263);</script>
+          <script>
+            MktoForms2.loadForm("//lp.ndsoft.jp", "524-EUC-041", 4263);
+          </script>
         </dd>
       </dl>
     </div>
@@ -155,13 +199,13 @@
 
       <div class="speech"><span>関東圏の工場・倉庫の物件をお探しならお気軽にご相談ください！</span></div>
       <a href="<?php echo esc_url(home_url('/')); ?>contact/" class="more bgP long">ご相談・お問合せはこちら</a>
-      
+
     </div>
   </section>
 
-  <?php get_template_part( 'template-parts/material' ); ?>
+  <?php get_template_part('template-parts/material'); ?>
 
-  <?php get_template_part( 'template-parts/casestudy' ); ?>
+  <?php get_template_part('template-parts/casestudy'); ?>
 
   <section class="sec-column">
     <div class="containers">
@@ -169,25 +213,25 @@
       <div class="flex jcC gap30 card">
 
         <?php
-          $paged = get_query_var('paged') ? get_query_var('paged') : 1;
-          $args = array(
-            'posts_per_page' => 3,
-            'post_type' => 'column',
-            'paged' => $paged,
-            'order' => 'DESC',
-            'post_status' => 'publish',
-            'tax_query'  => array(
-              array(
-                'taxonomy' => 'column_category',
-                'field' => 'slug',
-                'terms' => 'buyer',
-                'operator' => 'IN',
-              ),
+        $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+        $args = array(
+          'posts_per_page' => 3,
+          'post_type' => 'column',
+          'paged' => $paged,
+          'order' => 'DESC',
+          'post_status' => 'publish',
+          'tax_query'  => array(
+            array(
+              'taxonomy' => 'column_category',
+              'field' => 'slug',
+              'terms' => 'buyer',
+              'operator' => 'IN',
             ),
-          );
-          $the_query = new WP_Query($args);
-          if ($the_query->have_posts()) :
-          ?>
+          ),
+        );
+        $the_query = new WP_Query($args);
+        if ($the_query->have_posts()) :
+        ?>
 
           <?php while ($the_query->have_posts()) : $the_query->the_post();
             $post_id = get_the_ID();
@@ -231,12 +275,12 @@
     </div>
   </section>
 
-  <?php get_template_part( 'template-parts/inquiry' ); ?>
+  <?php get_template_part('template-parts/inquiry'); ?>
 
   <section class="breadcrumb">
     <div class="containers">
       <ul class="flex fS">
-        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">トップ</a></li>
+        <li><a href="<?php echo esc_url(home_url('/')); ?>">トップ</a></li>
         <li>不動産を買いたい企業様</li>
       </ul>
     </div>
