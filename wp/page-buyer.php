@@ -6,11 +6,11 @@
     <div class="containers">
       <div class="hero__box">
         <div class="hero-m__box--sub"><span>関東圏</span>で<span>工場・倉庫</span>の物件をお探しの<small>企業様へ</small></div>
-        <h1 class="ttl-primary-lower">物件の購入からリノベーションまで<br>「ZEUS INBEST」がワンストップでサポートいたします。</h1>
-        <div class="ctabtn">
+        <h1 class="ttl-primary-lower">物件の購入から修繕・管理まで<br>「ZEUS INBEST」がワンストップでサポートいたします。</h1>
+        <!-- <div class="ctabtn">
           <div class="balloon"><span class="balloon__txt">非公開物件多数！</span></div>
           <a href="<?php echo esc_url(home_url('/')); ?>contact/" class="more bgP">ご相談・お問合せはこちら</a>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -45,7 +45,7 @@
           ?>
             <div class="card">
               <a href="<?php the_permalink(); ?>" class="flex card__box">
-                <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/buyer/img-card.webp" alt="物件" loading="lazy" decoding="async" width="138" height="138"></figure>
+                <!-- <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/buyer/img-card.webp" alt="物件" loading="lazy" decoding="async" width="138" height="138"></figure> -->
 
                 <figure class="card__box--img"><?php the_post_thumbnail(); ?></figure>
 
@@ -153,11 +153,9 @@
       <dl class="consult__box">
         <dt class="consult__box--ttl">簡単物件探し</dt>
         <dd class="consult__box--form mkto">
-          <script src="//lp.ndsoft.jp/js/forms2/js/forms2.min.js"></script>
-          <form id="mktoForm_4263"></form>
-          <script>
-            MktoForms2.loadForm("//lp.ndsoft.jp", "524-EUC-041", 4263);
-          </script>
+          <script src="//showa.renoxia.com/js/forms2/js/forms2.min.js"></script>
+          <form id="mktoForm_587"></form>
+          <script>MktoForms2.loadForm("//showa.renoxia.com", "546-DCB-412", 587);</script>
         </dd>
       </dl>
     </div>
@@ -168,13 +166,13 @@
       <h2 class="ttl-secondary">不動産仲介サービス「ZEUS INBEST」とは</h2>
       <dl class="card">
         <dt><img src="<?php echo assets_path() ?>img/buyer/logo-symmetry.svg" alt="ZEUS INBEST" loading="lazy" decoding="async" width="343" height="88"></dt>
-        <dd>リノベーション<span>施工実績2万件以上</span>の正和工業が独自ルートで開拓した、<br><span>工場・倉庫を中心</span>として取り扱う不動産仲介サービスです。</dd>
+        <dd>総合建設企業として<span>施工実績2万件以上</span>の弊社が独自ルートで開拓した、<br><span>工場・倉庫を中心</span>として取り扱う不動産仲介サービスです。</dd>
       </dl>
       <div class="flex aiC sp-reverse item">
         <summary class="item__box">
           <div class="item__box--point"><span>POINT 01</span></div>
           <h2 class="item__box--ttl"><span class="marker">関東の工場・倉庫</span>など不動産多数</h2>
-          <div class="item__box--txt">関東で工場や倉庫のリノベーションを多く手掛けてきた正和工業だからこそ取り扱える、工場や倉庫の物件が多数ございます。<br>またリノベーションに強みを持つからこそわかる各物件の正確な状態や懸念点もお伝えをすることで、安心・適切な物件購入をサポートします。<br><a href="#" class="txt-link">取り扱い物件例はこちら</a></div>
+          <div class="item__box--txt">関東で工場や倉庫案件を多く手掛けてきた弊社だからこそ取り扱える、独自物件が多数ございます。<br>また、建設ベースの不動産だからこそわかる各物件の正確な状態や懸念点もお伝えをすることで、安心・適切な物件購入をサポートします。<br><a href="<?php echo esc_url(home_url('/')); ?>property/" class="txt-link">取り扱い物件例はこちら</a></div>
         </summary>
         <figure class="item__img"><img src="<?php echo assets_path() ?>img/buyer/img-symmetry01.webp" alt="関東の工場・倉庫など不動産多数" loading="lazy" decoding="async" width="522" height="293"></figure>
       </div>
@@ -184,17 +182,17 @@
         <summary class="item__box">
           <div class="item__box--point"><span>POINT 02</span></div>
           <h2 class="item__box--ttl">検討時点で諸経費込みの<span class="marker">投資費用が算出可能</span></h2>
-          <div class="item__box--txt">物件の購入からリノベーションまでワンストップで提供できるので、検討時点で修繕費・諸経費込みの投資費用を算出することが可能です。</div>
+          <div class="item__box--txt">物件の購入から修繕・管理までワンストップで提供できるので、検討時点で修繕費・諸経費込みの投資費用を算出することが可能です。</div>
         </summary>
       </div>
 
       <div class="flex aiC sp-reverse item">
         <summary class="item__box">
           <div class="item__box--point"><span>POINT 03</span></div>
-          <h2 class="item__box--ttl">購入後の<span class="marker">リノベーションもサポート</span></h2>
-          <div class="item__box--txt">単なる不動産売買だけではなく、物件購入後のお客様のニーズにお応えしたリノベーションもサポートいたします。<br>工程も施工領域も、すべて正和工業の１社で受託できることにより、スムーズかつ低コストなリノベーションを実現いたします。</div>
+          <h2 class="item__box--ttl">購入後の<span class="marker">修繕・管理もサポート</span></h2>
+          <div class="item__box--txt">単なる不動産売買だけではなく、物件購入後のお客様のニーズにお応えした修繕・管理もサポートいたします。<br>工程も施工領域も、弊社だけで受託できることにより、スムーズかつ低コストな施工を実現いたします。</div>
         </summary>
-        <figure class="item__img"><img src="<?php echo assets_path() ?>img/buyer/img-symmetry03.webp" alt="購入後のリノベーションもサポート" loading="lazy" decoding="async" width="522" height="293"></figure>
+        <figure class="item__img"><img src="<?php echo assets_path() ?>img/buyer/img-symmetry03.webp" alt="購入後の修繕・管理もサポート" loading="lazy" decoding="async" width="522" height="293"></figure>
       </div>
 
       <div class="speech"><span>関東圏の工場・倉庫の物件をお探しならお気軽にご相談ください！</span></div>

@@ -2,6 +2,30 @@
 <html <?php language_attributes(); ?>>
 
 <head>
+  <!-- Munchkin トラッキングコード -->
+  <script type="text/javascript">
+  (function() {
+    var didInit = false;
+    function initMunchkin() {
+    if(didInit === false) {
+      didInit = true;
+      Munchkin.init('546-DCB-412');
+    }
+    }
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//munchkin.marketo.net/munchkin.js';
+    s.onreadystatechange = function() {
+    if (this.readyState == 'complete' || this.readyState == 'loaded') {
+      initMunchkin();
+    }
+    };
+    s.onload = initMunchkin;
+    document.getElementsByTagName('head')[0].appendChild(s);
+  })();
+  </script>
+
   <!-- Google Tag Manager -->
   <script>
     (function(w, d, s, l, i) {
@@ -74,10 +98,10 @@
           <li><a href="<?php echo esc_url(home_url('/')); ?>seller/" class="link">不動産を売りたい企業様</a></li>
           <li><a href="<?php echo esc_url(home_url('/')); ?>buyer/" class="link">不動産を買いたい企業様</a></li>
           <li><a href="<?php echo esc_url(home_url('/')); ?>property/" class="link">物件一覧</a></li>
-          <li><a href="<?php echo esc_url(home_url('/')); ?>strength/" class="link">正和工業の強み</a></li>
+          <!-- <li><a href="<?php echo esc_url(home_url('/')); ?>strength/" class="link">正和工業の強み</a></li> -->
           <li><a href="<?php echo esc_url(home_url('/')); ?>column/" class="link">お役立ちコラム</a></li>
           <li><a href="<?php echo esc_url(home_url('/')); ?>whitepaper/" class="link">お役立ち資料</a></li>
-          <li><a href="<?php echo esc_url(home_url('/')); ?>company/" class="link">会社情報</a></li>
+          <li><a href="<?php echo esc_url(home_url('/')); ?>company/" class="link">運営会社</a></li>
         </ul>
       </nav>
 
@@ -86,10 +110,10 @@
           <li><a href="<?php echo esc_url(home_url('/')); ?>service/">サービス詳細</a></li>
           <li><a href="<?php echo esc_url(home_url('/')); ?>buyer/">不動産を買いたい企業様</a></li>
           <li><a href="<?php echo esc_url(home_url('/')); ?>seller/">不動産を売りたい企業様</a></li>
-          <li><a href="<?php echo esc_url(home_url('/')); ?>strength/">正和工業の強み</a></li>
+          <!-- <li><a href="<?php echo esc_url(home_url('/')); ?>strength/">正和工業の強み</a></li> -->
           <li><a href="<?php echo esc_url(home_url('/')); ?>column/">お役立ちコラム</a></li>
           <li><a href="<?php echo esc_url(home_url('/')); ?>whitepaper/">お役立ち資料</a></li>
-          <li><a href="<?php echo esc_url(home_url('/')); ?>company/">会社情報</a></li>
+          <li><a href="<?php echo esc_url(home_url('/')); ?>company/">運営会社</a></li>
         </ul>
         <ul class="aside">
           <li><a href="tel:0120971170" class="tel">0120-971-170</a><br>平日9:00~18:00（土日祝は除く）</li>

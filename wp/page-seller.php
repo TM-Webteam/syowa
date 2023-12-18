@@ -7,10 +7,10 @@
       <div class="hero__box">
         <div class="hero-m__box--sub">不動産を<span>確実に・高値</span>で売りたい<small>企業様へ</small></div>
         <h1 class="ttl-primary-lower">「ZEUS INBEST」ならお客さまの所有不動産の<br>確実な売却を実現。さらに高価売却もサポートいたします。</h1>
-        <div class="ctabtn">
+        <!-- <div class="ctabtn">
           <div class="balloon"><span class="balloon__txt">査定は無料！お気軽にご相談ください！</span></div>
           <a href="<?php echo esc_url(home_url('/')); ?>contact/" class="more bgP">ご相談・お問合せはこちら</a>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -20,13 +20,13 @@
       <h2 class="ttl-secondary">不動産仲介サービス「ZEUS INBEST」とは</h2>
       <dl class="card">
         <dt><img src="<?php echo assets_path() ?>img/seller/logo-symmetry.svg" alt="ZEUS INBEST" loading="lazy" decoding="async" width="343" height="88"></dt>
-        <dd><span>2万件以上のリノベーション</span>を手掛けてきた正和工業だからこそできる、<br><span>確実な不動産売却</span>と、<span>高価売却</span>もサポート可能なサービスです。</dd>
+        <dd>ZEUS INBESTは、<span>建設ベース</span>の不動産ならではのノウハウで<br><span>確実な不動産売却</span>と、<span>高価売却</span>もサポート可能なサービスです。</dd>
       </dl>
       <div class="flex aiC sp-reverse item">
         <summary class="item__box">
           <div class="item__box--point"><span>POINT 01</span></div>
           <h2 class="item__box--ttl"><span class="marker">工場・倉庫の確実な物件売却</span>をサポート</h2>
-          <div class="item__box--txt">正和工業は、関東で工場や倉庫中心に2万件以上のリノベーション施工実績がございます。<br>工場や倉庫の取り扱いに強みを持つからこそわかる、物件を確実に売却するためのサポートをいたします。<br>また、工場を操業しながらの売却をご希望される場合、極秘・非公開での売却にも対応いたします。極秘で売却が必要な場合は、弊社にご相談ください。</div>
+          <div class="item__box--txt">工場や倉庫の取り扱いに強みを持つからこそわかる、物件を確実に売却するためのサポートをいたします。<br>また、工場を操業しながらの売却をご希望される場合、極秘・非公開での売却にも対応いたします。極秘で売却が必要な場合は、弊社にご相談ください。</div>
         </summary>
         <figure class="item__img"><img src="<?php echo assets_path() ?>img/seller/img-symmetry01.webp" alt="工場・倉庫の確実な物件売却をサポート" loading="lazy" decoding="async" width="522" height="293"></figure>
       </div>
@@ -44,7 +44,7 @@
         <summary class="item__box">
           <div class="item__box--point"><span>POINT 03</span></div>
           <h2 class="item__box--ttl"><span class="marker">物件価値を高める</span>ための独自ノウハウを保有</h2>
-          <div class="item__box--txt">売却前の物件に利便性・機能性などの付加価値を付けることで、物件価値を向上させることが可能です。<br>2万件以上のリノベーションを手掛けてきた正和工業ならではの物件価値を高めるための独自のノウハウにより物件価値を大幅に向上させ、高価売却を実現させるリノベーションもご提案いたします。</div>
+          <div class="item__box--txt">売却前の物件に利便性・機能性などの付加価値を付けることで、物件価値を向上させることが可能です。<br>2万件以上の物件を手掛けてきた弊社ならではの、物件価値を高めるための独自ノウハウにより物件価値を大幅に向上させ、高価売却を実現させるためのご提案もさせていただきます。</div>
         </summary>
         <figure class="item__img"><img src="<?php echo assets_path() ?>img/seller/img-symmetry03.webp" alt="物件価値を高めるための独自ノウハウを保有" loading="lazy" decoding="async" width="522" height="293"></figure>
       </div>
@@ -61,7 +61,7 @@
 
   <?php get_template_part( 'template-parts/about' ); ?>
 
-  <section class="sec-column">
+  <section class="sec-column bg-G">
     <div class="containers">
       <h2 class="ttl-secondary">不動産売却前に読んでおきたいお役立ち記事</h2>
       <div class="flex jcC gap30 card">

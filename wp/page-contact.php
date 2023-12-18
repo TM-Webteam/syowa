@@ -19,9 +19,9 @@
       
       <div class="mkto">
         <div class="form__ttl">お問合せ・ご相談フォーム</div>
-        <script src="//lp.ndsoft.jp/js/forms2/js/forms2.min.js"></script>
-        <form id="mktoForm_4260"></form>
-        <script>MktoForms2.loadForm("//lp.ndsoft.jp", "524-EUC-041", 4260);</script>
+        <script src="//showa.renoxia.com/js/forms2/js/forms2.min.js"></script>
+        <form id="mktoForm_583"></form>
+        <script>MktoForms2.loadForm("//showa.renoxia.com", "546-DCB-412", 583);</script>
       </div>
       
     </div>

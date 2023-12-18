@@ -58,9 +58,9 @@
 
         <div class="mkto">
           <div class="form__ttl">ダウンロード申込フォーム</div>
-          <script src="//lp.ndsoft.jp/js/forms2/js/forms2.min.js"></script>
+          <script src="//showa.renoxia.com/js/forms2/js/forms2.min.js"></script>
           <form id="mktoForm_<?php echo CFS()->get('form_id'); ?>"></form>
-          <script>MktoForms2.loadForm("//lp.ndsoft.jp", "524-EUC-041", <?php echo CFS()->get('form_id'); ?>);</script>
+          <script>MktoForms2.loadForm("//showa.renoxia.com", "546-DCB-412", <?php echo CFS()->get('form_id'); ?>);</script>
         </div>
 
       </aside>

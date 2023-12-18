@@ -7,10 +7,10 @@
       <div class="hero__box">
         <div class="hero__box--sub"><span>「関東近郊」</span>工場・倉庫など事業用不動産の売買サポート</div>
         <h1 class="ttl-primary">事業用不動産を<br class="sp-only">買いたい方・<br class="pc-only">売りたい方双方に<br class="sp-only">大きなメリットを</h1>
-        <div class="hero__box--txt">事業用不動産売買の仲介からお客様のニーズを満たした<br class="pc-only">リノベーションまでワンストップでサポート可能です。</div>
+        <div class="hero__box--txt">「ZEUS INBEST」は、建設ベースの不動産だからこそできる物件に関する<br class="pc-only">情報提供から管理・修繕工事までまとめてサポートできる不動産仲介サービスです。</div>
         <div class="ctabtn">
           <div class="balloon"><span class="balloon__txt">製品の特長や料金が3分で分かる！</span></div>
-          <a href="<?php echo esc_url(home_url('/')); ?>catalog/" class="more bgP thumb">サービス資料ダウンロード</a>
+          <a href="<?php echo esc_url(home_url('/')); ?>catalog/" class="more bgP">サービス資料ダウンロード</a>
         </div>
       </div>
     </div>
@@ -23,8 +23,7 @@
         <a href="<?php echo esc_url(home_url('/')); ?>buyer/" class="card__box">
           <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/top/img-support01.webp" alt="" loading="lazy" decoding="async" width="470" height="264"></figure>
           <h3 class="card__box--ttl">不動産を<span>買いたい</span>方はこちら</h3>
-          <div class="card__box--txt"><span class="marker">関東圏で物件をお探しの経営者様へ。</span><br>工場・倉庫を中心とした取り扱い物件や<br>
-            サービス詳細についてはこちらをご覧ください。</div>
+          <div class="card__box--txt"><span class="marker">関東圏で物件をお探しの経営者様へ。</span><br>工場・倉庫を中心とした取り扱い物件や<br>サービス詳細についてはこちらをご覧ください。</div>
         </a>
         <a href="<?php echo esc_url(home_url('/')); ?>seller/" class="card__box">
           <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/top/img-support02.webp" alt="" loading="lazy" decoding="async" width="470" height="264"></figure>
@@ -36,8 +35,6 @@
   </section>
 
   <?php get_template_part( 'template-parts/features' ); ?>
-
-  <?php get_template_part( 'template-parts/forte' ); ?>
 
   <section class="material">
     <div class="containers">
@@ -54,7 +51,7 @@
     </div>
   </section>
 
-  <section class="sec-column">
+  <section class="sec-column bg-G">
     <div class="containers">
       <h2 class="ttl-secondary">事業用不動産お役立ちコラム</h2>
       <div class="flex jcC gap30 card">
@@ -99,7 +96,7 @@
     </div>
   </section>
 
-  <?php get_template_part( 'template-parts/info' ); ?>
+  <?php get_template_part( 'template-parts/about' ); ?>
 
   <?php get_template_part( 'template-parts/inquiry' ); ?>
 

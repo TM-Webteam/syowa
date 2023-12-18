@@ -5,12 +5,14 @@
   <section class="hero-m small core">
     <div class="containers">
       <div class="hero-m__box">
-        <h1 class="ttl-primary-lower">会社情報</h1>
+        <h1 class="ttl-primary-lower">運営会社</h1>
       </div>
     </div>
   </section>
 
-  <section class="intro">
+  <?php get_template_part( 'template-parts/about02' ); ?>
+
+  <!-- <section class="intro">
     <div class="containers">
       <h2 class="ttl-secondary">正和工業とは</h2>
       <dl class="intro__box">
@@ -18,10 +20,10 @@
         <dd>正和工業株式会社は1963年の創業より、建築リノベーションをはじめとした数々の事業を展開してきた総合建設業です。<br>積み重ねてきた施工実績と、豊富な人材、培った技術力・ノウハウを活かし、<br>工種を問わない施工体制でお客様の多様化するニーズにお応えいたします。</dd>
       </dl>
     </div>
-  </section>
+  </section> -->
 
   <section class="history">
-    <div class="containers pt0">
+    <div class="containers">
       <h2 class="ttl-secondary">会社概要</h2>
       <dl class="flex fS history__desc">
         <dt>商号</dt>
@@ -66,7 +68,21 @@
 
   <section class="history">
     <div class="containers pt0">
-      <h2 class="ttl-secondary">許可登録</h2>
+      <h2 class="ttl-secondary">不動産関連許可登録</h2>
+      <dl class="flex fS history__desc v2">
+        <dt>免許番号</dt>
+        <dd>国土交通大臣免許（１）第１０００１号</dd>
+        <dt>所属団体</dt>
+        <dd>(公社)埼玉県宅地建物取引業協会会員<br>(公社)首都圏不動産公正取引協議会加盟</dd>
+        <dt>保証協会</dt>
+        <dd>(公社)全国宅地建物取引業保証協会</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="history">
+    <div class="containers pt0">
+      <h2 class="ttl-secondary">その他の許可登録</h2>
       <dl class="flex fS history__desc v2">
         <dt>建築・管・土木・電気<br>大工・左官・とび、土工、コンクリート・石・屋根・タイル、れんが、ブロック 鋼構造物・鉄筋・ほ装・しゅんせつ・板金・ガラス・塗装・防水・内装仕上・熱絶縁建具・水道施設</dt>
         <dd>建設業許可　国土交通大臣許可（特定）第9773号</dd>
@@ -98,7 +114,7 @@
     <div class="containers">
       <ul class="flex fS">
         <li><a href="<?php echo esc_url(home_url('/')); ?>">トップ</a></li>
-        <li>会社情報</li>
+        <li>運営会社</li>
       </ul>
     </div>
   </section>

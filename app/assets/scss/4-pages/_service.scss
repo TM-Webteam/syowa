@@ -46,9 +46,11 @@
 
   .onestop {
     &__img {
-      margin-bottom: 45px;
+      margin: 0 auto 45px;
+      width: 80%;
       @media #{$sp} {
-        margin-bottom: 20px;
+        margin: 0 auto 20px;
+        width: 100%;
       }
     }
     .lead {

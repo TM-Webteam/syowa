@@ -252,11 +252,9 @@ $kind_terms = get_the_terms($post_id, 'property_kind');
 
         <div class="mkto">
           <div class="form__ttl">物件のお問合せフォーム</div>
-          <script src="//lp.ndsoft.jp/js/forms2/js/forms2.min.js"></script>
-          <form id="mktoForm_4297"></form>
-          <script>
-            MktoForms2.loadForm("//lp.ndsoft.jp", "524-EUC-041", 4297);
-          </script>
+          <script src="//showa.renoxia.com/js/forms2/js/forms2.min.js"></script>
+          <form id="mktoForm_600"></form>
+          <script>MktoForms2.loadForm("//showa.renoxia.com", "546-DCB-412", 600);</script>
         </div>
 
         <div class="side-bnr">

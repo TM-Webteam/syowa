@@ -1,4 +1,4 @@
-<?php get_header(); 
+<?php get_header();
 $title = get_the_title();
 ?>
 
@@ -32,23 +32,27 @@ $title = get_the_title();
           <h2 class="article__toc--ttl">本資料の目次</h2>
           <div class="article__toc--list">
 
-          <?php $paragraph_arr = CFS()->get('toc'); ?>
-          <?php if ($paragraph_arr) : ?>
-            <dl>
-              <?php foreach ($paragraph_arr as $paragraph) : ?>
-              <dt><h3><?php echo esc_html(strip_tags($paragraph['title'])) ?></h3></dt>
-              <?php if ($paragraph['caption']) : ?>
-              <dd>
-                <ul>
-                  <?php foreach ((array)$paragraph['caption'] as $caption) : ?>
-                    <li><h4><?php echo esc_html(strip_tags($caption['caption_title'])) ?></h4></li>
-                  <?php endforeach ?>
-                </ul>
-              </dd>
-              <?php endif; ?>
-              <?php endforeach; ?>
-            </dl>
-          <?php endif; ?>
+            <?php $paragraph_arr = CFS()->get('toc'); ?>
+            <?php if ($paragraph_arr) : ?>
+              <dl>
+                <?php foreach ($paragraph_arr as $paragraph) : ?>
+                  <dt>
+                    <h3><?php echo esc_html(strip_tags($paragraph['title'])) ?></h3>
+                  </dt>
+                  <?php if ($paragraph['caption']) : ?>
+                    <dd>
+                      <ul>
+                        <?php foreach ((array)$paragraph['caption'] as $caption) : ?>
+                          <li>
+                            <h4><?php echo esc_html(strip_tags($caption['caption_title'])) ?></h4>
+                          </li>
+                        <?php endforeach ?>
+                      </ul>
+                    </dd>
+                  <?php endif; ?>
+                <?php endforeach; ?>
+              </dl>
+            <?php endif; ?>
 
           </div>
         </div>
@@ -60,16 +64,16 @@ $title = get_the_title();
 
         <div class="mkto">
           <div class="form__ttl">ダウンロード申込フォーム</div>
-          <script src="//lp.ndsoft.jp/js/forms2/js/forms2.min.js"></script>
+          <script src="//showa.renoxia.com/js/forms2/js/forms2.min.js"></script>
           <form id="mktoForm_<?php echo CFS()->get('form_id'); ?>"></form>
-          <script>MktoForms2.loadForm("//lp.ndsoft.jp", "524-EUC-041", <?php echo CFS()->get('form_id'); ?>);</script>
+          <script>MktoForms2.loadForm("//showa.renoxia.com", "546-DCB-412", <?php echo CFS()->get('form_id'); ?>);</script>
         </div>
 
       </aside>
-      
+
     </div>
   </section>
-  
+
 
   <section class="breadcrumb">
     <div class="containers">

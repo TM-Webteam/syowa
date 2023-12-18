@@ -1,6 +1,6 @@
 <section class="about">
   <div class="containers">
-    <h2 class="ttl-secondary">運営会社</h2>
+    <h2 class="ttl-secondary">正和工業株式会社</h2>
     <div class="lead">「ZEUS INBEST」は、総合建設業の正和工業株式会社が運営する不動産仲介サービスです。<br class="pc-only">1963年の創業より積み重ねてきた施工実績や、保有認証・資格、豊富な人材、培った技術力・ノウハウを活かし、<br class="pc-only">工種を問わない施工体制でお客様の多様化するニーズにお応えいたします。</div>
     <ul id="hexagon" class="flex aiC">
       <li class="core">

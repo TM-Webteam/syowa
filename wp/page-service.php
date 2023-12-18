@@ -5,7 +5,7 @@
   <section class="hero-m">
     <div class="containers">
       <div class="hero-m__box">
-        <div class="hero-m__box--sub">不動産仲介からリノベーションまでサポート可能</div>
+        <div class="hero-m__box--sub">不動産仲介から修繕・管理まで<br>まとめてサポート可能</div>
         <h1 class="ttl-primary-lower">「ZEUS INBEST」とは</h1>
         <ul class="flex inherit hero-m__box--list">
           <li>工場・倉庫中心に<br>取り扱い</li>
@@ -26,7 +26,7 @@
         <li><a href="#onestop">サービス概要<br><img src="<?php echo assets_path() ?>img/common/anchor.svg" alt="" loading="lazy" decoding="async" width="23" height="23"></a></li>
         <li><a href="#features">特長<br><img src="<?php echo assets_path() ?>img/common/anchor.svg" alt="" loading="lazy" decoding="async" width="23" height="23"></a></li>
         <li><a href="#merit">メリット<br><img src="<?php echo assets_path() ?>img/common/anchor.svg" alt="" loading="lazy" decoding="async" width="23" height="23"></a></li>
-        <li><a href="#forte">正和工業の強み<br><img src="<?php echo assets_path() ?>img/common/anchor.svg" alt="" loading="lazy" decoding="async" width="23" height="23"></a></li>
+        <li><a href="#forte">運営会社について<br><img src="<?php echo assets_path() ?>img/common/anchor.svg" alt="" loading="lazy" decoding="async" width="23" height="23"></a></li>
       </ul>
     </div>
   </section>
@@ -49,14 +49,14 @@
         <div class="card__sub"><span>買主様</span>のメリット</div>
         <ul class="flex jcC gap30">
           <li class="card__box">
-            <h3 class="card__box--ttl">物件仲介からリノベーションまで<br>ワンストップで対応</h3>
-            <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/service/img-merit01.webp" alt="物件仲介からリノベーションまでワンストップで対応" loading="lazy" decoding="async" width="470" height="264"></figure>
-            <div class="card__box--txt">ZEUS INBESTでは物件の仲介はもちろんのこと、<br><span class="marker">リノベーションまでワンストップで対応。</span><br>スムーズかつ理想的な物件購入をサポートします。</div>
+            <h3 class="card__box--ttl">物件仲介から修繕・管理まで<br>ワンストップで対応</h3>
+            <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/service/img-merit01.webp" alt="物件仲介から修繕・管理までワンストップで対応" loading="lazy" decoding="async" width="470" height="264"></figure>
+            <div class="card__box--txt">ZEUS INBESTでは物件の仲介はもちろんのこと、<br><span class="marker">修繕・管理までワンストップで対応。</span><br>スムーズかつ理想的な物件購入をサポートします。</div>
           </li>
           <li class="card__box">
             <h3 class="card__box--ttl">検討時点で諸経費込みの投資費用が<br>算出可能</h3>
             <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/service/img-merit02.webp" alt="検討時点で諸経費込みの投資費用が算出可能" loading="lazy" decoding="async" width="470" height="264"></figure>
-            <div class="card__box--txt">物件の購入からリノベーションまでワンストップで<br>提供できるので、検討時点で<span class="marker">修繕費・諸経費込みの<br>投資費用を算出することが可能</span>です。</div>
+            <div class="card__box--txt">物件の購入から修繕・管理までワンストップで<br>提供できるので、検討時点で<span class="marker">修繕費・諸経費込みの<br>投資費用を算出することが可能</span>です。</div>
           </li>
         </ul>
         <a href="<?php echo esc_url(home_url('/')); ?>buyer/" class="more">詳しくはこちら</a>
@@ -68,7 +68,7 @@
           <li class="card__box">
             <h3 class="card__box--ttl">確実な売却・高価な売却を実現</h3>
             <figure class="card__box--img"><img src="<?php echo assets_path() ?>img/service/img-merit03.webp" alt="確実な売却・高価な売却を実現" loading="lazy" decoding="async" width="470" height="264"></figure>
-            <div class="card__box--txt">リノベーション事業で培った豊富なノウハウで、<br><span class="marker">確実な売却を実現。</span>物件価値を高め<br><span class="marker">高価売却をするためのご提案</span>もいたします。</div>
+            <div class="card__box--txt">建設ベースの不動産として培った豊富なノウハウで、<br><span class="marker">確実な売却を実現。</span>物件価値を高め<br><span class="marker">高価売却をするためのご提案</span>もいたします。</div>
           </li>
           <li class="card__box">
             <h3 class="card__box--ttl">大手企業を中心に多くの買い手顧客を保有</h3>
@@ -83,7 +83,7 @@
   
   <?php get_template_part( 'template-parts/material' ); ?>
 
-  <?php get_template_part( 'template-parts/forte' ); ?>
+  <?php get_template_part( 'template-parts/about' ); ?>
 
   <?php get_template_part( 'template-parts/inquiry' ); ?>
 
